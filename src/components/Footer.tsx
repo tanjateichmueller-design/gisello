@@ -32,7 +32,7 @@ export function Footer() {
           <div className="md:justify-self-end flex flex-wrap" style={{ gap: 24 }}>
             {[
               { label: "INSTAGRAM", href: "#" },
-              { label: "LINKEDIN", href: "https://www.linkedin.com/company/112211754/" },
+              { label: "LINKEDIN", href: "https://www.linkedin.com/company/112211754/admin/page-posts/published/" },
             ].map((s) => (
               <a
                 key={s.label}
