@@ -75,7 +75,11 @@ const INCLUDED: IncludedItem[] = [
     detail: "30-min call · free · no obligation",
     body: "Direct conversation about your situation, budget, and timing. We listen first. We tell you whether you're a fit for the pilot before you commit to anything.",
   },
-  { label: "Clinical brief", detail: "AI-drafted · clinician-reviewed" },
+  {
+    label: "Clinical brief",
+    detail: "AI-drafted · clinician-reviewed",
+    body: "Based on your medical records, we write a medical brief that travels with you to every clinic — so you never repeat your story from scratch.",
+  },
   { label: "Clinic shortlist", detail: "3-5 vetted CoE matches" },
   { label: "Travel coordination", detail: "logistics · accommodation · language" },
   { label: "Patient Manager", detail: "single point of contact · 24/7 in-destination" },
