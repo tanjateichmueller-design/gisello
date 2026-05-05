@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import founderImg from "@/assets/founder-tanja-cropped.png";
 
 export function Hero() {
@@ -57,9 +58,9 @@ export function Hero() {
           </p>
 
           <div className="mt-9">
-            <a
+            <Link
               id="book"
-              href="#book-call"
+              to="/book-call"
               className="inline-flex items-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors"
               style={{
                 padding: "16px 28px",
@@ -70,7 +71,7 @@ export function Hero() {
               }}
             >
               BOOK A 30-MINUTE INTRO CALL →
-            </a>
+            </Link>
           </div>
 
           <div
