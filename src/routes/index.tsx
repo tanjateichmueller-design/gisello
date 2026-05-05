@@ -33,6 +33,7 @@ function Index() {
       <NavBar />
       <main>
         <Hero />
+        <JourneyTimeline />
         <TeaserGrid />
       </main>
       <Footer />
