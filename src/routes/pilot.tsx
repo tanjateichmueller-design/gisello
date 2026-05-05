@@ -91,7 +91,11 @@ const INCLUDED: IncludedItem[] = [
     body: "Visa support if needed, accommodation booking, language support at the clinic, document handoff at every step. The Patient Navigator is your single contact.",
   },
   { label: "Patient Navigator", detail: "single point of contact · 24/7 in-destination" },
-  { label: "Follow-up & insurance", detail: "outcomes tracked · claims handled" },
+  {
+    label: "Outcome tracking and follow-up",
+    detail: "outcomes tracked · claims handled",
+    body: "30-day, 6-month, and 1-year follow-ups. Insurance reimbursement claim handling if applicable.",
+  },
 ];
 
 function PilotPage() {
