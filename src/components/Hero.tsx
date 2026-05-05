@@ -127,17 +127,22 @@ export function Hero() {
               className="mt-5"
               style={{ width: 36, height: 1.5, background: "var(--color-ochre)" }}
             />
-            <div
-              className="mt-4"
+            <a
+              href="https://www.linkedin.com/in/tanjateichmueller/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-1.5 hover:underline"
               style={{
                 fontFamily: "var(--font-sans)",
                 fontWeight: 600,
                 fontSize: 14,
                 color: "var(--color-ink)",
+                textUnderlineOffset: 4,
               }}
             >
               Tanja Teichmüller
-            </div>
+              <span aria-hidden style={{ fontSize: 12, color: "var(--color-ochre)" }}>↗</span>
+            </a>
             <div
               className="mt-1"
               style={{
