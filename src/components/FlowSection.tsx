@@ -13,21 +13,21 @@ const PHASES: Phase[] = [
     num: "01",
     tag: "01 · Intake",
     title: "You tell us your situation",
-    body: "A 30-minute intro call with the founder. We listen, ask the right questions, and understand the medical context, your budget, and where you can travel. No medical records uploaded yet — that's not how the pilot works.",
+    body: "A 30-minute intro call with the founder. We listen, ask the right questions, and understand the medical context, your budget, and where you can travel. No medical records uploaded yet. That's not how the pilot works.",
     meta: "30 MIN · FOUNDER-LED · FREE",
   },
   {
     num: "02",
     tag: "02 · Brief",
     title: "We compress your situation into a clinical brief",
-    body: "AI processes your medical context into a structured doctor-to-doctor document. No marketing language. No fluff. The brief is the product — what we send to clinics on your behalf.",
+    body: "AI processes your medical context into a structured doctor-to-doctor document. No marketing language. No fluff. The brief is the product. It's what we send to clinics on your behalf.",
     meta: "2-3 DAYS · AI-DRAFTED · CLINICIAN-REVIEWED",
   },
   {
     num: "03",
     tag: "03 · Match",
     title: "You receive a shortlist of clinics that fit",
-    body: "For your CoE (Centre of Excellence — Fertility, in 2026), we identify clinics that match your clinical profile, budget band, and travel willingness. You see the rationale for each match. You choose.",
+    body: "For your CoE (Centre of Excellence, Fertility, in 2026), we identify clinics that match your clinical profile, budget band, and travel willingness. You see the rationale for each match. You choose.",
     meta: "3-5 OPTIONS · YOUR DECISION · TRANSPARENT",
   },
   {
@@ -310,7 +310,7 @@ export function FlowSection() {
             }}
           >
             From the moment you tell us what's wrong to the moment you're back
-            on your feet at home — we're with you. Here's what happens at each
+            on your feet at home, we're with you. Here's what happens at each
             step.
           </p>
 

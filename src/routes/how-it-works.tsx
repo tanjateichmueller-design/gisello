@@ -10,13 +10,13 @@ export const Route = createFileRoute("/how-it-works")({
   component: HowItWorks,
   head: () => ({
     meta: [
-      { title: "How it works — GISELLO" },
+      { title: "How it works · GISELLO" },
       {
         name: "description",
         content:
           "From intake to follow-up. One companion across five phases of cross-border fertility care. AI handles the cognition. Humans handle the care.",
       },
-      { property: "og:title", content: "How it works — GISELLO" },
+      { property: "og:title", content: "How it works · GISELLO" },
       {
         property: "og:description",
         content:
