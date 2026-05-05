@@ -34,7 +34,7 @@ const PHASES: Phase[] = [
     num: "04",
     tag: "04 · Travel & Treatment",
     title: "We coordinate the journey",
-    body: "Travel logistics, accommodation, language support at the clinic, document handoff. You focus on the treatment. We handle the rest. The Patient Manager is your single point of contact.",
+    body: "Travel logistics, accommodation, language support at the clinic, document handoff. You focus on the treatment. We handle the rest. The Patient Navigator is your single point of contact.",
     meta: "1-2 WEEKS · IN-DESTINATION · 24/7 PM ACCESS",
   },
   {

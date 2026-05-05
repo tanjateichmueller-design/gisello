@@ -90,7 +90,7 @@ const INCLUDED: IncludedItem[] = [
     detail: "logistics · accommodation · language",
     body: "Visa support if needed, accommodation booking, language support at the clinic, document handoff at every step. The Patient Navigator is your single contact.",
   },
-  { label: "Patient Manager", detail: "single point of contact · 24/7 in-destination" },
+  { label: "Patient Navigator", detail: "single point of contact · 24/7 in-destination" },
   { label: "Follow-up & insurance", detail: "outcomes tracked · claims handled" },
 ];
 

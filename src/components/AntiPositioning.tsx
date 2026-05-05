@@ -14,7 +14,7 @@ const ITEMS: NotItem[] = [
   },
   {
     title: "An AI chatbot",
-    body: "AI processes documents and drafts briefs. It doesn't replace the human relationship with your Patient Manager.",
+    body: "AI processes documents and drafts briefs. It doesn't replace the human relationship with your Patient Navigator.",
   },
   {
     title: "A wellness platform",
