@@ -164,7 +164,7 @@ function PilotPage() {
               >
                 {[
                   { k: "10", l: "Invited patients" },
-                  { k: "€0", l: "Patient cost in pilot" },
+                  { k: "€0", l: "Coordination fee (treatment costs separate)" },
                   { k: "1", l: "Centre of Excellence (Fertility)" },
                   { k: "Q4 2026", l: "Full regulatory framework" },
                 ].map((s) => (
