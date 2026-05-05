@@ -60,7 +60,7 @@ export function Hero() {
             <a
               id="book"
               href="#book-call"
-              className="inline-flex items-center bg-ink text-paper hover:bg-signal-deep transition-colors"
+              className="inline-flex items-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors"
               style={{
                 padding: "16px 28px",
                 fontFamily: "var(--font-mono)",
