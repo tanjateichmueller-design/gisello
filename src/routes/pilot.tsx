@@ -38,8 +38,8 @@ const CRITERIA: Criterion[] = [
   },
   {
     num: "02",
-    title: "Willing to travel within Europe",
-    body: "Our 2026 pilot routes through vetted Centres of Excellence in Czechia, Spain, and Greece.",
+    title: "Willing to travel",
+    body: "Our 2026 pilot routes through vetted Centres of Excellence in Czechia, Spain, Greece, and Dubai.",
   },
   {
     num: "03",
