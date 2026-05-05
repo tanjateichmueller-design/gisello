@@ -67,6 +67,20 @@ const INCLUDED: IncludedItem[] = [
   { label: "Follow-up & insurance", detail: "outcomes tracked · claims handled" },
 ];
 
+const FIT_FOR: string[] = [
+  "You're researching IVF (own or donor egg) cross-border",
+  "You're based in the UK, EU, GCC, or UAE",
+  "You can self-pay (or have international PMI that covers fertility)",
+  "You're open to travelling to CZ, ES, GR, CY, or Dubai",
+  "You want one person who'll stay with you across the journey",
+];
+
+const NOT_FIT: string[] = [
+  "You need oncology, ortho, or aesthetic care (Y2-Y3 CoEs, not 2026)",
+  "You want zero involvement in decisions — we present options, you choose",
+  "You expect us to recommend you to clinics that pay us (we don't take clinic commission)",
+];
+
 function PilotPage() {
   return (
     <div id="top" className="min-h-screen bg-paper">
@@ -187,6 +201,148 @@ function PilotPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Eligibility split */}
+        <section className="bg-paper" style={{ padding: "100px 48px 0" }}>
+          <div className="mx-auto" style={{ maxWidth: 1180 }}>
+            <div className="flex items-center" style={{ gap: 24 }}>
+              <span
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 11,
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: "var(--color-ochre)",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                02 / Eligibility
+              </span>
+              <div style={{ flex: 1, height: 1, background: "var(--color-ink)" }} />
+              <span
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 11,
+                  letterSpacing: "0.15em",
+                  color: "var(--color-ink)",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                2026 pilot cohort
+              </span>
+            </div>
+
+            <h2
+              className="mt-12"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(40px, 4.5vw, 60px)",
+                lineHeight: 1.1,
+                color: "var(--color-ink)",
+                fontWeight: 500,
+                maxWidth: 900,
+              }}
+            >
+              Ten spots. One question:{" "}
+              <span style={{ fontStyle: "italic" }}>
+                does this fit your situation?
+              </span>
+            </h2>
+
+            <div
+              className="mt-14 grid grid-cols-1 md:grid-cols-2"
+              style={{ gap: 64 }}
+            >
+              {/* This is for you if */}
+              <div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 11,
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "var(--color-ochre)",
+                  }}
+                >
+                  This is for you if
+                </div>
+                <ul className="mt-6" style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                  {FIT_FOR.map((item) => (
+                    <li
+                      key={item}
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "12px 1fr",
+                        gap: 14,
+                        alignItems: "baseline",
+                        fontFamily: "var(--font-sans)",
+                        fontSize: 15,
+                        lineHeight: 1.55,
+                        color: "var(--color-ink)",
+                      }}
+                    >
+                      <span
+                        aria-hidden
+                        style={{
+                          width: 10,
+                          height: 10,
+                          background: "var(--color-ink)",
+                          display: "inline-block",
+                          transform: "translateY(1px)",
+                        }}
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Not this cohort if */}
+              <div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 11,
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "var(--color-gray-60)",
+                  }}
+                >
+                  Not this cohort if
+                </div>
+                <ul className="mt-6" style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                  {NOT_FIT.map((item) => (
+                    <li
+                      key={item}
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "12px 1fr",
+                        gap: 14,
+                        alignItems: "baseline",
+                        fontFamily: "var(--font-sans)",
+                        fontSize: 15,
+                        lineHeight: 1.55,
+                        color: "var(--color-gray-60)",
+                      }}
+                    >
+                      <span
+                        aria-hidden
+                        style={{
+                          width: 10,
+                          height: 10,
+                          background: "var(--color-gray-30)",
+                          display: "inline-block",
+                          transform: "translateY(1px)",
+                        }}
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
