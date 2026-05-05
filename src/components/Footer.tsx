@@ -69,7 +69,7 @@ export function Footer() {
             GISELLO HEALTH · 2026 · GISELLO HEALTH TECHNOLOGY FZ-LLC ·
             PRE-INCORPORATION · FULL REGULATORY FRAMEWORK · Q4 2026
           </span>
-          <span>MADE IN DUBAI</span>
+          <span></span>
         </div>
       </div>
     </footer>
