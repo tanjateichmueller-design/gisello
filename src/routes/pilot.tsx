@@ -66,10 +66,15 @@ const CRITERIA: Criterion[] = [
 interface IncludedItem {
   label: string;
   detail: string;
+  body?: string;
 }
 
 const INCLUDED: IncludedItem[] = [
-  { label: "Founder-led intake", detail: "30-min call · free · no obligation" },
+  {
+    label: "Founder-led intake",
+    detail: "30-min call · free · no obligation",
+    body: "Direct conversation about your situation, budget, and timing. We listen first. We tell you whether you're a fit for the pilot before you commit to anything.",
+  },
   { label: "Clinical brief", detail: "AI-drafted · clinician-reviewed" },
   { label: "Clinic shortlist", detail: "3-5 vetted CoE matches" },
   { label: "Travel coordination", detail: "logistics · accommodation · language" },
