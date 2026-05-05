@@ -67,20 +67,6 @@ const INCLUDED: IncludedItem[] = [
   { label: "Follow-up & insurance", detail: "outcomes tracked · claims handled" },
 ];
 
-const FIT_FOR: string[] = [
-  "You're researching IVF (own or donor egg) cross-border",
-  "You're based in the UK, EU, GCC, or UAE",
-  "You can self-pay (or have international PMI that covers fertility)",
-  "You're open to travelling to CZ, ES, GR, CY, or Dubai",
-  "You want one person who'll stay with you across the journey",
-];
-
-const NOT_FIT: string[] = [
-  "You need oncology, ortho, or aesthetic care (Y2-Y3 CoEs, not 2026)",
-  "You want zero involvement in decisions — we present options, you choose",
-  "You expect us to recommend you to clinics that pay us (we don't take clinic commission)",
-];
-
 function PilotPage() {
   return (
     <div id="top" className="min-h-screen bg-paper">
