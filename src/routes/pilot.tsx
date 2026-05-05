@@ -51,6 +51,31 @@ const CRITERIA: Criterion[] = [
     title: "Open to founder-led contact",
     body: "You'll work directly with Tanja for intake, decision calls, and check-ins through the journey.",
   },
+  {
+    num: "05",
+    title: "Researching IVF cross-border",
+    body: "You're actively exploring IVF — with your own or donor eggs — outside your home country.",
+  },
+  {
+    num: "06",
+    title: "Based in the UK, EU, GCC, or UAE",
+    body: "Our 2026 pilot is built for patients travelling from these regions to a vetted Centre of Excellence.",
+  },
+  {
+    num: "07",
+    title: "Able to self-pay or use international PMI",
+    body: "Treatment costs sit with you or your insurer. We cover coordination — you cover the clinic.",
+  },
+  {
+    num: "08",
+    title: "Open to travelling to CZ, ES, GR, CY, or Dubai",
+    body: "These are our 2026 destinations. We match you to the right one based on your medical brief — not commissions.",
+  },
+  {
+    num: "09",
+    title: "Wanting one person beside you",
+    body: "You want a single companion who stays with you across the journey — not a handoff between strangers.",
+  },
 ];
 
 interface IncludedItem {
