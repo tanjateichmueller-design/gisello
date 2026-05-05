@@ -142,7 +142,7 @@ export function JourneyTimeline() {
               color: "var(--color-paper)",
             }}
           >
-            How we are
+            Built around you, not the system.
           </span>
         </div>
 
