@@ -143,7 +143,7 @@ function BookCallPage() {
                 color: "var(--color-ochre)",
               }}
             >
-              FREE · CAL.COM · GDPR ARTICLE 13 NOTICE BELOW THE FOLD
+              FREE · CAL.COM · GDPR · UK GDPR · UAE PDPL · US CCPA NOTICE BELOW
             </div>
           </div>
         </section>
