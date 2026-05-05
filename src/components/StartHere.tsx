@@ -51,7 +51,7 @@ export function StartHere() {
 
         <Link
           to="/book-call"
-          className="mt-10 inline-flex items-center bg-paper text-ink hover:bg-paper-pure transition-colors"
+          className="mt-10 inline-flex items-center bg-paper text-ink hover:bg-ochre hover:text-ink transition-colors"
           style={{
             padding: "20px 48px",
             fontFamily: "var(--font-mono)",
