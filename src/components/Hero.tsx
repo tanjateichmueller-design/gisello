@@ -99,22 +99,6 @@ export function Hero() {
               className="block w-full h-auto"
               loading="eager"
             />
-            <div
-              className="absolute left-0 right-0 bottom-0"
-              style={{ padding: "16px 20px" }}
-            >
-              <span
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: 10,
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "var(--color-ochre)",
-                }}
-              >
-                TANJA TEICHMÜLLER · FOUNDER, GISELLO
-              </span>
-            </div>
           </div>
 
           <blockquote
@@ -143,6 +127,29 @@ export function Hero() {
               className="mt-5"
               style={{ width: 36, height: 1.5, background: "var(--color-ochre)" }}
             />
+            <div
+              className="mt-4"
+              style={{
+                fontFamily: "var(--font-sans)",
+                fontWeight: 600,
+                fontSize: 14,
+                color: "var(--color-ink)",
+              }}
+            >
+              Tanja Teichmüller
+            </div>
+            <div
+              className="mt-1"
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: 10,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "var(--color-ochre)",
+              }}
+            >
+              Founder, GISELLO
+            </div>
           </blockquote>
         </div>
       </div>
