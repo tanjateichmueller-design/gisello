@@ -1,3 +1,5 @@
+import testimonialImg from "@/assets/testimonial-mother-baby.png";
+
 interface Phase {
   num: string;
   tag: string;
@@ -201,7 +203,7 @@ export function FlowSection() {
             >
               <div className="aspect-[4/3] overflow-hidden bg-ink">
                 <img
-                  src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=80"
+                  src={testimonialImg}
                   alt="Mother holding her newborn after fertility treatment"
                   className="w-full h-full object-cover"
                   loading="lazy"
