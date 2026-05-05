@@ -49,7 +49,7 @@ const CRITERIA: Criterion[] = [
   {
     num: "04",
     title: "Able to self-pay or use international PMI",
-    body: "Treatment costs sit with you or your insurer. We cover coordination — you cover the clinic. No commissions, ever.",
+    body: "Treatment costs sit with you or your insurer. We cover coordination — you cover the clinic — and we handle insurance reimbursement on your behalf. No commissions, ever.",
   },
   {
     num: "05",
