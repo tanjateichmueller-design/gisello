@@ -173,14 +173,18 @@ export function JourneyTimeline() {
 
         {/* Timeline */}
         <div className="mt-24 relative">
-          {/* Top row of steps (odd) */}
-          <div className="grid grid-cols-4" style={{ gap: 16 }}>
-            {tops.map((s) => (
-              <StepCard key={s.num} s={s} />
-            ))}
+          {/* Top row: odd steps in cols 1,3,5,7 */}
+          <div className="grid grid-cols-8" style={{ gap: 16 }}>
+            {STEPS.map((s, i) =>
+              s.position === "top" ? (
+                <div key={s.num} style={{ gridColumn: `${i + 1} / span 1` }}>
+                  <StepCard s={s} />
+                </div>
+              ) : null
+            )}
           </div>
 
-          {/* Dotted axis with dots */}
+          {/* Dotted axis with 8 dots */}
           <div className="relative mt-10 mb-10" style={{ height: 28 }}>
             <div
               className="absolute left-0 right-0 top-1/2"
@@ -189,9 +193,8 @@ export function JourneyTimeline() {
                 opacity: 0.55,
               }}
             />
-            {/* Center label */}
             <div
-              className="absolute left-1/2 -translate-x-1/2 px-4"
+              className="absolute left-1/2 px-4"
               style={{
                 top: "50%",
                 transform: "translate(-50%, -50%)",
@@ -201,46 +204,39 @@ export function JourneyTimeline() {
                 letterSpacing: "0.25em",
                 textTransform: "uppercase",
                 color: "var(--color-gray-30)",
+                whiteSpace: "nowrap",
               }}
             >
               GISELLO · END-TO-END
             </div>
-            {/* 8 dots evenly spaced */}
-            <div className="absolute inset-0 grid grid-cols-8">
-              {STEPS.map((s, i) => {
-                const isWhite = s.highlight;
-                return (
-                  <div key={i} className="flex items-center justify-center">
-                    <span
-                      className="block rounded-full"
-                      style={{
-                        width: 10,
-                        height: 10,
-                        background: isWhite
-                          ? "var(--color-paper)"
-                          : "var(--color-ochre)",
-                        border: isWhite
-                          ? "1px solid var(--color-paper)"
-                          : "none",
-                      }}
-                    />
-                  </div>
-                );
-              })}
+            <div className="absolute inset-0 grid grid-cols-8" style={{ gap: 16 }}>
+              {STEPS.map((s, i) => (
+                <div key={i} className="flex items-center justify-center">
+                  <span
+                    className="block rounded-full"
+                    style={{
+                      width: 10,
+                      height: 10,
+                      background: s.highlight
+                        ? "var(--color-paper)"
+                        : "var(--color-ochre)",
+                    }}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Bottom row of steps (even) — offset by half a column */}
-          <div
-            className="grid grid-cols-4"
-            style={{ gap: 16, paddingLeft: "12.5%", paddingRight: "0%" }}
-          >
-            {bottoms.map((s) => (
-              <StepCard key={s.num} s={s} />
-            ))}
+          {/* Bottom row: even steps in cols 2,4,6,8 */}
+          <div className="grid grid-cols-8" style={{ gap: 16 }}>
+            {STEPS.map((s, i) =>
+              s.position === "bottom" ? (
+                <div key={s.num} style={{ gridColumn: `${i + 1} / span 1` }}>
+                  <StepCard s={s} />
+                </div>
+              ) : null
+            )}
           </div>
-
-          {/* Top row offset (push it half a column LEFT-aligned by adding padding-right) */}
         </div>
       </div>
     </section>
