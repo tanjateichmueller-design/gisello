@@ -83,7 +83,7 @@ export function Hero() {
               color: "var(--color-ochre)",
             }}
           >
-            FREE · FOUNDER-LED · FERTILITY COE · 2026
+            FREE · FOUNDER-LED · FERTILITY CENTER OF EXCELLENCE · 2026
           </div>
         </div>
 

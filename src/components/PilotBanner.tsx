@@ -22,7 +22,7 @@ export function PilotBanner() {
         <span aria-hidden>·</span>
         <span>FOUNDER-LED</span>
         <span aria-hidden>·</span>
-        <span>FERTILITY COE</span>
+        <span>FERTILITY CENTER OF EXCELLENCE</span>
         <span aria-hidden className="mx-2" />
         <a
           href="#book"
