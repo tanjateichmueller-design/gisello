@@ -27,7 +27,7 @@ const STEPS: Step[] = [
     num: "03",
     tag: "Coordination",
     title: "We find the right clinic",
-    meta: "Brief-driven match · 12+ vetted centres",
+    meta: "AI matching algorithm · brief-driven · 12+ vetted centres",
     position: "top",
   },
   {
