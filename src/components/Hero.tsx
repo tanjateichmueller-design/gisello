@@ -112,7 +112,7 @@ export function Hero() {
                   color: "var(--color-ochre)",
                 }}
               >
-                FOUNDER · GISELLO
+                TANJA TEICHMÜLLER · FOUNDER, GISELLO
               </span>
             </div>
           </div>
