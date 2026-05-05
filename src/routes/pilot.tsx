@@ -38,8 +38,8 @@ const CRITERIA: Criterion[] = [
   },
   {
     num: "02",
-    title: "Researching IVF cross-border",
-    body: "You're actively exploring IVF — with your own or donor eggs — outside your home country, and you want a structured second path.",
+    title: "Researching fertility treatment cross-border",
+    body: "You're actively exploring fertility treatment — IVF, IUI, donor options, or anything in between — outside your home country, and you want a structured second path.",
   },
   {
     num: "03",
