@@ -1,140 +1,136 @@
-interface Step {
-  id: string;
-  eyebrow: string;
+interface Phase {
+  num: string;
+  tag: string;
   title: string;
-  detail: string;
-  position: "top" | "bottom";
+  body: string;
+  meta: string;
 }
 
-const STEPS: Step[] = [
+const PHASES: Phase[] = [
   {
-    id: "01",
-    eyebrow: "01 / Intake",
-    title: "Book a 30-min intro call",
-    detail: "Founder-led · free · AI-structured brief",
-    position: "top",
+    num: "01",
+    tag: "01 · Intake",
+    title: "You tell us your situation",
+    body: "A 30-minute intro call with the founder. We listen, ask the right questions, and understand the medical context, your budget, and where you can travel. No medical records uploaded yet — that's not how the pilot works.",
+    meta: "30 MIN · FOUNDER-LED · FREE",
   },
   {
-    id: "02",
-    eyebrow: "02 / Medical brief",
-    title: "Your case, precisely structured",
-    detail: "AI-generated · clinician-reviewed · matched to your needs",
-    position: "bottom",
+    num: "02",
+    tag: "02 · Brief",
+    title: "We compress your situation into a clinical brief",
+    body: "AI processes your medical context into a structured doctor-to-doctor document. No marketing language. No fluff. The brief is the product — what we send to clinics on your behalf.",
+    meta: "2-3 DAYS · AI-DRAFTED · CLINICIAN-REVIEWED",
   },
   {
-    id: "03",
-    eyebrow: "03 / Coordination",
-    title: "We find the right clinic",
-    detail: "Brief-driven match · 12+ vetted centres",
-    position: "top",
+    num: "03",
+    tag: "03 · Match",
+    title: "You receive a shortlist of clinics that fit",
+    body: "For your CoE (Centre of Excellence — Fertility, in 2026), we identify clinics that match your clinical profile, budget band, and travel willingness. You see the rationale for each match. You choose.",
+    meta: "3-5 OPTIONS · YOUR DECISION · TRANSPARENT",
   },
   {
-    id: "04",
-    eyebrow: "04 / Decision call",
-    title: "You choose your clinic",
-    detail: "Founder-led · questions welcome · no pressure",
-    position: "bottom",
+    num: "04",
+    tag: "04 · Travel & Treatment",
+    title: "We coordinate the journey",
+    body: "Travel logistics, accommodation, language support at the clinic, document handoff. You focus on the treatment. We handle the rest. The Patient Manager is your single point of contact.",
+    meta: "1-2 WEEKS · IN-DESTINATION · 24/7 PM ACCESS",
   },
   {
-    id: "05",
-    eyebrow: "05 / Travel",
-    title: "We handle the logistics",
-    detail: "End-to-end planning · no gaps",
-    position: "top",
-  },
-  {
-    id: "06",
-    eyebrow: "06 / Treatment",
-    title: "You receive care abroad",
-    detail: "GISELLO on-call · clinic liaison · no handoffs",
-    position: "bottom",
-  },
-  {
-    id: "07",
-    eyebrow: "07 / Recovery",
-    title: "You focus on healing",
-    detail: "Post-procedure support · real-time updates",
-    position: "top",
-  },
-  {
-    id: "08",
-    eyebrow: "08 / Aftercare",
-    title: "Care doesn't stop at departure",
-    detail: "Home GP handoff · complication support · aftercare coordination",
-    position: "bottom",
+    num: "05",
+    tag: "05 · Recovery & Follow-up",
+    title: "We don't disappear when you fly home",
+    body: "Post-treatment care doesn't stop at the clinic door. We track outcomes, coordinate follow-up appointments, and handle insurance reimbursement claims if your plan covers cross-border care. You're not alone after.",
+    meta: "30 DAYS - 12 MONTHS · OUTCOME TRACKED · INSURANCE HANDLED",
   },
 ];
 
-function StepNode({ filled }: { filled: boolean }) {
+function PhaseCard({ p }: { p: Phase }) {
   return (
-    <div className="flex justify-center" aria-hidden>
-      <div
-        style={{
-          width: 12,
-          height: 12,
-          borderRadius: "50%",
-          background: filled ? "var(--color-ochre)" : "var(--color-paper)",
-          border: filled ? "none" : "1.5px solid var(--color-paper)",
-        }}
-      />
-    </div>
-  );
-}
-
-function StepCard({ step }: { step: Step }) {
-  return (
-    <div className="text-center px-3">
-      <div
-        style={{
-          fontFamily: "var(--font-mono)",
-          fontSize: 11,
-          letterSpacing: "0.2em",
-          textTransform: "uppercase",
-          color: "var(--color-gray-30)",
-          lineHeight: 1,
-        }}
-      >
-        {step.eyebrow}
+    <article
+      className="grid grid-cols-1 md:grid-cols-[260px_1fr]"
+      style={{
+        border: "1px solid var(--color-ink)",
+        background: "var(--color-paper)",
+        padding: "44px 48px",
+        gap: 24,
+      }}
+    >
+      <div>
+        <div
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: 64,
+            lineHeight: 1,
+            color: "var(--color-ink)",
+            fontWeight: 500,
+          }}
+        >
+          {p.num}
+        </div>
+        <div
+          className="mt-6"
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            color: "var(--color-gray-60)",
+          }}
+        >
+          {p.tag}
+        </div>
       </div>
-      <h3
-        className="mt-3 mx-auto"
-        style={{
-          fontFamily: "var(--font-display)",
-          fontSize: 22,
-          lineHeight: 1.2,
-          color: "var(--color-paper)",
-          maxWidth: 220,
-        }}
-      >
-        {step.title}
-      </h3>
-      <p
-        className="mt-3 mx-auto"
-        style={{
-          fontFamily: "var(--font-mono)",
-          fontSize: 11,
-          letterSpacing: "0.15em",
-          color: "var(--color-ochre)",
-          lineHeight: 1.6,
-          maxWidth: 220,
-        }}
-      >
-        {step.detail}
-      </p>
-    </div>
+
+      <div>
+        <h3
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontWeight: 600,
+            fontSize: 22,
+            lineHeight: 1.3,
+            color: "var(--color-ink)",
+          }}
+        >
+          {p.title}
+        </h3>
+        <p
+          className="mt-4"
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 15,
+            lineHeight: 1.65,
+            color: "var(--color-gray-60)",
+            maxWidth: 720,
+          }}
+        >
+          {p.body}
+        </p>
+        <div
+          className="mt-7"
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            letterSpacing: "0.2em",
+            color: "var(--color-ochre)",
+          }}
+        >
+          {p.meta}
+        </div>
+      </div>
+    </article>
   );
 }
 
 export function FlowSection() {
   return (
-    <section
-      id="flow"
-      className="bg-ink text-paper"
-      style={{ padding: "100px 48px" }}
-    >
-      <div className="mx-auto" style={{ maxWidth: 1280 }}>
-        {/* Section eyebrow row */}
-        <div className="flex items-end justify-between flex-wrap gap-3">
+    <>
+      {/* Navy intro band */}
+      <section
+        id="flow"
+        className="bg-ink text-paper"
+        style={{ padding: "120px 48px" }}
+      >
+        <div className="mx-auto" style={{ maxWidth: 1280 }}>
           <span
             style={{
               fontFamily: "var(--font-mono)",
@@ -144,105 +140,185 @@ export function FlowSection() {
               color: "var(--color-ochre)",
             }}
           >
-            02 / Flow · cross-border · end-to-end
+            02 / Cross-border care · end-to-end
           </span>
-          <span
+
+          <div className="mt-12 grid grid-cols-1 lg:grid-cols-[6fr_5fr]" style={{ gap: 64 }}>
+            <div>
+              <h2
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(48px, 5.5vw, 76px)",
+                  lineHeight: 1.05,
+                  letterSpacing: "-0.01em",
+                  color: "var(--color-paper)",
+                  fontWeight: 500,
+                }}
+              >
+                From intake
+                <br />
+                <span style={{ fontStyle: "italic" }}>to follow-up.</span>
+                <br />
+                <span style={{ fontStyle: "italic" }}>
+                  We're with you all
+                </span>
+                <br />
+                <span style={{ fontStyle: "italic" }}>the way.</span>
+              </h2>
+
+              <p
+                className="mt-10"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 18,
+                  lineHeight: 1.6,
+                  color: "var(--color-paper)",
+                  maxWidth: 520,
+                }}
+              >
+                AI handles the cognition. Humans handle the care. Records that
+                travel. Decisions that are yours.
+              </p>
+
+              <div
+                className="mt-10"
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 11,
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: "var(--color-ochre)",
+                }}
+              >
+                5 PHASES · 1 COMPANION · ZERO HANDOFF GAPS
+              </div>
+            </div>
+
+            {/* Testimonial card */}
+            <div
+              className="bg-paper-pure"
+              style={{ borderTop: "3px solid var(--color-ochre)" }}
+            >
+              <div className="aspect-[4/3] overflow-hidden bg-ink">
+                <img
+                  src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mother holding her newborn after fertility treatment"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div style={{ padding: "32px 36px 36px" }}>
+                <span
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: 28,
+                    color: "var(--color-ochre)",
+                    lineHeight: 1,
+                  }}
+                >
+                  &rdquo;
+                </span>
+                <p
+                  className="mt-3"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontStyle: "italic",
+                    fontSize: 18,
+                    lineHeight: 1.55,
+                    color: "var(--color-ink)",
+                  }}
+                >
+                  In the UK, we'd been told it wasn't possible to become
+                  pregnant because of my endometriosis. 12 months later, we are
+                  holding our daughter.
+                </p>
+                <div
+                  className="mt-6"
+                  style={{ height: 1, background: "var(--color-rule)" }}
+                />
+                <div className="mt-5 flex items-end justify-between flex-wrap gap-2">
+                  <div>
+                    <div
+                      style={{
+                        fontFamily: "var(--font-sans)",
+                        fontWeight: 600,
+                        fontSize: 14,
+                        color: "var(--color-ink)",
+                      }}
+                    >
+                      Sarah &amp; James, London
+                    </div>
+                    <div
+                      className="mt-1"
+                      style={{
+                        fontFamily: "var(--font-mono)",
+                        fontSize: 10,
+                        letterSpacing: "0.2em",
+                        textTransform: "uppercase",
+                        color: "var(--color-gray-60)",
+                      }}
+                    >
+                      IVF · CLINIC REPROFIT, PRAGUE
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: 10,
+                      letterSpacing: "0.2em",
+                      textTransform: "uppercase",
+                      color: "var(--color-ochre)",
+                    }}
+                  >
+                    ✓ SUCCESSFUL PREGNANCY
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Light section: five phases stacked */}
+      <section className="bg-paper" style={{ padding: "100px 48px" }}>
+        <div className="mx-auto" style={{ maxWidth: 1180 }}>
+          <div
+            style={{ height: 1, background: "var(--color-ink)", opacity: 0.2 }}
+          />
+          <h2
+            className="mt-14"
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: 28,
-              fontStyle: "italic",
-              color: "var(--color-paper)",
-              lineHeight: 1,
+              fontSize: "clamp(40px, 4.5vw, 60px)",
+              lineHeight: 1.1,
+              color: "var(--color-ink)",
+              fontWeight: 500,
             }}
           >
-            How we are
-          </span>
-        </div>
-        <div
-          className="mt-5"
-          style={{ height: 1.5, background: "var(--color-paper)" }}
-        />
+            One companion across five phases.
+          </h2>
+          <p
+            className="mt-5"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: 16,
+              lineHeight: 1.6,
+              color: "var(--color-gray-60)",
+              maxWidth: 640,
+            }}
+          >
+            From the moment you tell us what's wrong to the moment you're back
+            on your feet at home — we're with you. Here's what happens at each
+            step.
+          </p>
 
-        {/* Positioning sentence */}
-        <p
-          className="mt-10"
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: 32,
-            lineHeight: 1.3,
-            color: "var(--color-paper)",
-            maxWidth: 760,
-          }}
-        >
-          Every step of your journey, handled.{" "}
-          <span style={{ fontStyle: "italic" }}>
-            From first call to final follow-up — one companion, no handoffs.
-          </span>
-        </p>
-
-        {/* Desktop alternating timeline */}
-        <div className="hidden lg:block mt-20">
-          {/* Top row of cards (odd steps) */}
-          <div className="grid grid-cols-8">
-            {STEPS.map((s) => (
-              <div key={`top-${s.id}`}>
-                {s.position === "top" ? <StepCard step={s} /> : null}
-              </div>
-            ))}
-          </div>
-
-          {/* Axis with nodes */}
-          <div className="relative my-8">
-            <div
-              className="absolute left-0 right-0 top-1/2 -translate-y-1/2"
-              style={{
-                height: 1,
-                borderTop: "1px dashed var(--color-paper)",
-                opacity: 0.35,
-              }}
-            />
-            <div className="relative grid grid-cols-8">
-              {STEPS.map((s, i) => (
-                <StepNode key={s.id} filled={i !== 0 && i !== STEPS.length - 1} />
-              ))}
-            </div>
-            {/* Center label */}
-            <div
-              className="absolute left-1/2 -translate-x-1/2 -top-4 px-3 bg-ink"
-              style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: 10,
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                color: "var(--color-gray-30)",
-              }}
-            >
-              GISELLO · END-TO-END
-            </div>
-          </div>
-
-          {/* Bottom row of cards (even steps) */}
-          <div className="grid grid-cols-8">
-            {STEPS.map((s) => (
-              <div key={`bot-${s.id}`}>
-                {s.position === "bottom" ? <StepCard step={s} /> : null}
-              </div>
+          <div className="mt-14 flex flex-col" style={{ gap: 24 }}>
+            {PHASES.map((p) => (
+              <PhaseCard key={p.num} p={p} />
             ))}
           </div>
         </div>
-
-        {/* Mobile / tablet stacked version */}
-        <div className="lg:hidden mt-12 grid grid-cols-1 sm:grid-cols-2 gap-10">
-          {STEPS.map((s, i) => (
-            <div key={s.id} className="relative">
-              <StepNode filled={i !== 0 && i !== STEPS.length - 1} />
-              <div className="mt-4">
-                <StepCard step={s} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

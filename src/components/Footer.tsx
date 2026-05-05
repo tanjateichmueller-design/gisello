@@ -66,7 +66,7 @@ export function Footer() {
           }}
         >
           <span>
-            GISELLO HEALTH · 2026 · ANIMA HEALTH TECHNOLOGY FZ-LLC ·
+            GISELLO HEALTH · 2026 · GISELLO HEALTH TECHNOLOGY FZ-LLC ·
             PRE-INCORPORATION · FULL REGULATORY FRAMEWORK · Q4 2026
           </span>
           <span>MADE IN DUBAI</span>
