@@ -30,10 +30,15 @@ export function Footer() {
           </nav>
 
           <div className="md:justify-self-end flex flex-wrap" style={{ gap: 24 }}>
-            {["INSTAGRAM", "LINKEDIN"].map((s) => (
+            {[
+              { label: "INSTAGRAM", href: "#" },
+              { label: "LINKEDIN", href: "https://www.linkedin.com/company/112211754/" },
+            ].map((s) => (
               <a
-                key={s}
-                href="#"
+                key={s.label}
+                href={s.href}
+                target={s.href.startsWith("http") ? "_blank" : undefined}
+                rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 style={{
                   fontFamily: "var(--font-mono)",
                   fontSize: 11,
@@ -43,7 +48,7 @@ export function Footer() {
                 }}
                 className="hover:opacity-80 transition-opacity"
               >
-                {s}
+                {s.label}
               </a>
             ))}
           </div>
