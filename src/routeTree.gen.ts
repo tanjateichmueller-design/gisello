@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PilotRouteImport } from './routes/pilot'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as BookCallRouteImport } from './routes/book-call'
 import { Route as IndexRouteImport } from './routes/index'
 
 const PilotRoute = PilotRouteImport.update({
@@ -23,6 +24,11 @@ const HowItWorksRoute = HowItWorksRouteImport.update({
   path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BookCallRoute = BookCallRouteImport.update({
+  id: '/book-call',
+  path: '/book-call',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/book-call': typeof BookCallRoute
   '/how-it-works': typeof HowItWorksRoute
   '/pilot': typeof PilotRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/book-call': typeof BookCallRoute
   '/how-it-works': typeof HowItWorksRoute
   '/pilot': typeof PilotRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/book-call': typeof BookCallRoute
   '/how-it-works': typeof HowItWorksRoute
   '/pilot': typeof PilotRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/how-it-works' | '/pilot'
+  fullPaths: '/' | '/book-call' | '/how-it-works' | '/pilot'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/how-it-works' | '/pilot'
-  id: '__root__' | '/' | '/how-it-works' | '/pilot'
+  to: '/' | '/book-call' | '/how-it-works' | '/pilot'
+  id: '__root__' | '/' | '/book-call' | '/how-it-works' | '/pilot'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BookCallRoute: typeof BookCallRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PilotRoute: typeof PilotRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/book-call': {
+      id: '/book-call'
+      path: '/book-call'
+      fullPath: '/book-call'
+      preLoaderRoute: typeof BookCallRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BookCallRoute: BookCallRoute,
   HowItWorksRoute: HowItWorksRoute,
   PilotRoute: PilotRoute,
 }
