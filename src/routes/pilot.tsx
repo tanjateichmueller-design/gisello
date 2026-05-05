@@ -80,7 +80,11 @@ const INCLUDED: IncludedItem[] = [
     detail: "AI-drafted · clinician-reviewed",
     body: "Based on your medical records, we write a medical brief that travels with you to every clinic — so you never repeat your story from scratch.",
   },
-  { label: "Clinic shortlist", detail: "3-5 vetted CoE matches" },
+  {
+    label: "Clinic shortlist",
+    detail: "3-5 vetted CoE matches",
+    body: "Based on your clinical brief and personal preferences, our matching algorithm puts together a shortlist of clinics with the highest success rates — so you go where the outcomes are best, not where the commissions are.",
+  },
   { label: "Travel coordination", detail: "logistics · accommodation · language" },
   { label: "Patient Manager", detail: "single point of contact · 24/7 in-destination" },
   { label: "Follow-up & insurance", detail: "outcomes tracked · claims handled" },
