@@ -1,3 +1,5 @@
+import testimonialImg from "@/assets/testimonial-mother-baby.png";
+
 interface Phase {
   num: string;
   tag: string;
