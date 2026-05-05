@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 export function PilotBanner() {
   return (
     <div
@@ -24,12 +26,12 @@ export function PilotBanner() {
         <span aria-hidden>·</span>
         <span>FERTILITY CENTER OF EXCELLENCE</span>
         <span aria-hidden className="mx-2" />
-        <a
-          href="#book"
+        <Link
+          to="/book-call"
           className="text-ochre underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity"
         >
           → BOOK A CALL
-        </a>
+        </Link>
       </div>
     </div>
   );
