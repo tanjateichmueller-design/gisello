@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 export function StartHere() {
   return (
     <section
@@ -47,8 +49,8 @@ export function StartHere() {
           You struggle with your fertility journey? Let me help you!
         </p>
 
-        <a
-          href="#book-call"
+        <Link
+          to="/book-call"
           className="mt-10 inline-flex items-center bg-paper text-ink hover:bg-paper-pure transition-colors"
           style={{
             padding: "20px 48px",
@@ -59,7 +61,7 @@ export function StartHere() {
           }}
         >
           BOOK A 30-MINUTE INTRO CALL →
-        </a>
+        </Link>
       </div>
     </section>
   );
