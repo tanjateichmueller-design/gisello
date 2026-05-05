@@ -3,6 +3,7 @@ import { PilotBanner } from "@/components/PilotBanner";
 import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
 import { TeaserGrid } from "@/components/TeaserGrid";
+import { JourneyTimeline } from "@/components/JourneyTimeline";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({

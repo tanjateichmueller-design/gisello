@@ -113,8 +113,6 @@ function StepCard({ s }: { s: Step }) {
 }
 
 export function JourneyTimeline() {
-  const tops = STEPS.filter((s) => s.position === "top");
-  const bottoms = STEPS.filter((s) => s.position === "bottom");
 
   return (
     <section
