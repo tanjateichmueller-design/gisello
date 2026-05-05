@@ -85,7 +85,11 @@ const INCLUDED: IncludedItem[] = [
     detail: "3-5 vetted CoE matches",
     body: "Based on your clinical brief and personal preferences, our matching algorithm puts together a shortlist of clinics with the highest success rates — so you go where the outcomes are best, not where the commissions are.",
   },
-  { label: "Travel coordination", detail: "logistics · accommodation · language" },
+  {
+    label: "Travel and treatment coordination",
+    detail: "logistics · accommodation · language",
+    body: "Visa support if needed, accommodation booking, language support at the clinic, document handoff at every step. The Patient Navigator is your single contact.",
+  },
   { label: "Patient Manager", detail: "single point of contact · 24/7 in-destination" },
   { label: "Follow-up & insurance", detail: "outcomes tracked · claims handled" },
 ];
