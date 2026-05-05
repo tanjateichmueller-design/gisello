@@ -326,47 +326,69 @@ function PilotPage() {
               {INCLUDED.map((i, idx) => (
                 <li
                   key={i.label}
-                  className="grid grid-cols-[40px_1fr_auto] items-baseline"
                   style={{
                     padding: "22px 0",
                     borderBottom:
                       idx === INCLUDED.length - 1
                         ? "none"
                         : "1px solid var(--color-rule)",
-                    gap: 16,
                   }}
                 >
-                  <span
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      fontSize: 11,
-                      letterSpacing: "0.2em",
-                      color: "var(--color-ochre)",
-                    }}
+                  <div
+                    className="grid grid-cols-[40px_1fr_auto] items-baseline"
+                    style={{ gap: 16 }}
                   >
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <span
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: 24,
-                      lineHeight: 1.2,
-                      color: "var(--color-ink)",
-                    }}
-                  >
-                    {i.label}
-                  </span>
-                  <span
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      fontSize: 11,
-                      letterSpacing: "0.15em",
-                      textTransform: "uppercase",
-                      color: "var(--color-gray-60)",
-                    }}
-                  >
-                    {i.detail}
-                  </span>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-mono)",
+                        fontSize: 11,
+                        letterSpacing: "0.2em",
+                        color: "var(--color-ochre)",
+                      }}
+                    >
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-display)",
+                        fontSize: 24,
+                        lineHeight: 1.2,
+                        color: "var(--color-ink)",
+                      }}
+                    >
+                      {i.label}
+                    </span>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-mono)",
+                        fontSize: 11,
+                        letterSpacing: "0.15em",
+                        textTransform: "uppercase",
+                        color: "var(--color-gray-60)",
+                      }}
+                    >
+                      {i.detail}
+                    </span>
+                  </div>
+                  {i.body && (
+                    <div
+                      className="grid grid-cols-[40px_1fr] mt-3"
+                      style={{ gap: 16 }}
+                    >
+                      <span />
+                      <p
+                        style={{
+                          fontFamily: "var(--font-sans)",
+                          fontSize: 14,
+                          lineHeight: 1.65,
+                          color: "var(--color-gray-60)",
+                          maxWidth: 720,
+                        }}
+                      >
+                        {i.body}
+                      </p>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
