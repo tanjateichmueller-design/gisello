@@ -119,7 +119,7 @@ export function Hero() {
               }}
             >
               “I built GISELLO because I know what it feels like to navigate a
-              foreign healthcare system alone. No one should have to do that —
+              foreign healthcare system alone. No one should have to do that,
               especially not during something as personal as fertility
               treatment.”
             </p>

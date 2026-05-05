@@ -8,13 +8,13 @@ export const Route = createFileRoute("/pilot")({
   component: PilotPage,
   head: () => ({
     meta: [
-      { title: "Pilot Programme 2026 — GISELLO" },
+      { title: "Pilot Programme 2026 · GISELLO" },
       {
         name: "description",
         content:
           "Ten invited patients. Founder-led, free of charge in 2026. The GISELLO pilot for cross-border fertility care.",
       },
-      { property: "og:title", content: "Pilot Programme 2026 — GISELLO" },
+      { property: "og:title", content: "Pilot Programme 2026 · GISELLO" },
       {
         property: "og:description",
         content:
@@ -34,12 +34,12 @@ const CRITERIA: Criterion[] = [
   {
     num: "01",
     title: "Carrying the weight of the journey",
-    body: "You're emotionally exhausted from rounds of treatment, appointments, and waiting — and you're ready for someone to walk this next step with you, not sell you something.",
+    body: "You're emotionally exhausted from rounds of treatment, appointments, and waiting. You're ready for someone to walk this next step with you, not sell you something.",
   },
   {
     num: "02",
     title: "Researching fertility treatment cross-border",
-    body: "You're actively exploring fertility treatment — IVF, IUI, donor options, or anything in between — outside your home country, and you want a structured second path.",
+    body: "You're actively exploring fertility treatment outside your home country, whether that's IVF, IUI, donor options, or anything in between. You want a structured second path.",
   },
   {
     num: "03",
@@ -49,7 +49,7 @@ const CRITERIA: Criterion[] = [
   {
     num: "04",
     title: "Able to self-pay or use international PMI",
-    body: "Treatment costs sit with you or your insurer. We cover coordination — you cover the clinic — and we handle insurance reimbursement on your behalf. No commissions, ever.",
+    body: "Treatment costs sit with you or your insurer. We cover coordination, you cover the clinic, and we handle insurance reimbursement on your behalf. No commissions, ever.",
   },
   {
     num: "05",
@@ -59,7 +59,7 @@ const CRITERIA: Criterion[] = [
   {
     num: "06",
     title: "Wanting one companion beside you",
-    body: "You'll work directly with Tanja — one person for intake, decision calls, and check-ins — across the whole journey.",
+    body: "You'll work directly with Tanja across the whole journey. One person for intake, decision calls, and check-ins.",
   },
 ];
 
@@ -78,12 +78,12 @@ const INCLUDED: IncludedItem[] = [
   {
     label: "Clinical brief",
     detail: "AI-drafted · clinician-reviewed",
-    body: "Based on your medical records, we write a medical brief that travels with you to every clinic — so you never repeat your story from scratch.",
+    body: "Based on your medical records, we write a medical brief that travels with you to every clinic, so you never repeat your story from scratch.",
   },
   {
     label: "Clinic shortlist",
     detail: "3-5 vetted CoE matches",
-    body: "Based on your clinical brief and personal preferences, our matching algorithm puts together a shortlist of clinics with the highest success rates — so you go where the outcomes are best, not where the commissions are.",
+    body: "Based on your clinical brief and personal preferences, our matching algorithm puts together a shortlist of clinics with the highest success rates. You go where the outcomes are best, not where the commissions are.",
   },
   {
     label: "Travel and treatment coordination",
@@ -154,7 +154,7 @@ function PilotPage() {
                   }}
                 >
                   In 2026, GISELLO accepts ten invited patients into our
-                  fertility pilot — free of charge. Every step is run by the
+                  fertility pilot, free of charge. Every step is run by the
                   founder. Every decision is yours.
                 </p>
                 <div

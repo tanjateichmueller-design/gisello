@@ -165,7 +165,7 @@ export function JourneyTimeline() {
         >
           Every step of your journey, handled.{" "}
           <span style={{ fontStyle: "italic" }}>
-            From first call to final follow-up — one companion, no handoffs.
+            From first call to final follow-up. One companion, no handoffs.
           </span>
         </h2>
 

@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "GISELLO — A companion who knows the way" },
+      { title: "GISELLO · A companion who knows the way" },
       {
         name: "description",
         content:
           "Cross-border fertility care, end-to-end. Records that travel. People who care. Decisions that are yours. Founder-led pilot for 2026.",
       },
-      { property: "og:title", content: "GISELLO — A companion who knows the way" },
+      { property: "og:title", content: "GISELLO · A companion who knows the way" },
       {
         property: "og:description",
         content:
