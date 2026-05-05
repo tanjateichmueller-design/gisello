@@ -33,8 +33,8 @@ interface Criterion {
 const CRITERIA: Criterion[] = [
   {
     num: "01",
-    title: "A clear medical need",
-    body: "You've explored fertility treatment in your home country and want a structured second path — not a sales pitch.",
+    title: "Carrying the weight of the journey",
+    body: "You're emotionally exhausted from rounds of treatment, appointments, and waiting — and you're ready for someone to walk this next step with you, not sell you something.",
   },
   {
     num: "02",
