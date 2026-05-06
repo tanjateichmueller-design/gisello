@@ -44,6 +44,7 @@
 
   /* GISELLO brand semantic tokens */
   --color-ink: var(--ink);
+  --color-ink-accent: var(--ink-accent);
   --color-paper: var(--paper);
   --color-paper-pure: var(--paper-pure);
   --color-rule: var(--rule);
@@ -62,17 +63,18 @@
 :root {
   --radius: 0;
 
-  /* Brand v5 palette — hex shown as oklch */
-  --ink: oklch(0.247 0.087 269);          /* #1B2454 */
-  --paper: oklch(0.949 0.018 86);         /* #F4F1EA */
-  --paper-pure: oklch(0.969 0.014 86);    /* #FAF8F2 */
-  --rule: oklch(0.795 0.022 80);          /* #C9C2B5 */
-  --signal: oklch(0.247 0.087 269);       /* #1B2454 — converges with ink */
-  --signal-deep: oklch(0.18 0.09 270);    /* #0F1638 */
-  --ochre: oklch(0.685 0.121 75);         /* #C49A2E */
-  --mark-line: oklch(0.535 0.211 28);     /* #C72B1F */
-  --gray-60: oklch(0.498 0 0);            /* #6B6B6B */
-  --gray-30: oklch(0.745 0.012 80);       /* #B5B0A6 */
+  /* Brand v6 palette — wireframe-aligned: white paper, near-black ink, dark-blue accent */
+  --ink: oklch(0.18 0 0);                 /* near-black body text #1a1a1a */
+  --ink-accent: oklch(0.247 0.087 269);   /* dark blue #1B2454 — for italic accents */
+  --paper: oklch(1 0 0);                  /* pure white */
+  --paper-pure: oklch(0.985 0 0);         /* near white for cards */
+  --rule: oklch(0.88 0 0);                /* light gray rule */
+  --signal: oklch(0.247 0.087 269);
+  --signal-deep: oklch(0.18 0.09 270);
+  --ochre: oklch(0.685 0.121 75);         /* keep ochre accent */
+  --mark-line: oklch(0.535 0.211 28);
+  --gray-60: oklch(0.45 0 0);             /* mid gray body */
+  --gray-30: oklch(0.78 0 0);
 
   /* Map shadcn-ish tokens onto brand */
   --background: var(--paper);
