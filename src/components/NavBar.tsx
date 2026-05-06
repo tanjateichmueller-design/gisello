@@ -1,13 +1,13 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { MarkLockup } from "./CompanionMark";
 
 const NAV = [
-  { label: "Who we are", href: "/#who" },
-  { label: "How it works", href: "/how-it-works" },
-  { label: "Pilot", href: "/pilot" },
-  { label: "Founder", href: "#founder" },
-  { label: "Writing", href: "#writing" },
-  { label: "What's next", href: "#whats-next" },
+  { label: "What we do", href: "/#who" },
+  { label: "Compliance", href: "/#compliance" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Writing", href: "/#field-notes" },
+  { label: "Company", href: "/#company", caret: true },
 ];
 
 export function NavBar() {
