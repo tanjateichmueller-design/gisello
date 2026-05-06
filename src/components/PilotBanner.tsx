@@ -4,33 +4,33 @@ export function PilotBanner() {
   return (
     <div
       className="w-full bg-ink text-paper"
-      style={{ padding: "11px 60px" }}
+      style={{ padding: "10px 48px" }}
     >
       <div
-        className="flex items-center justify-center gap-x-2 flex-wrap"
+        className="mx-auto flex items-center justify-center flex-wrap"
         style={{
-          fontFamily: "var(--font-mono)",
-          fontSize: 11,
-          letterSpacing: "0.15em",
-          textTransform: "uppercase",
-          lineHeight: 1.4,
+          maxWidth: 1280,
+          fontFamily: "var(--font-sans)",
+          fontSize: 13,
+          gap: 10,
         }}
       >
-        <span>PILOT PROGRAMME</span>
-        <span aria-hidden>·</span>
-        <span>2026</span>
-        <span aria-hidden>·</span>
-        <span>10 INVITED PATIENTS</span>
-        <span aria-hidden>·</span>
-        <span>FOUNDER-LED</span>
-        <span aria-hidden>·</span>
-        <span>FERTILITY CENTER OF EXCELLENCE</span>
-        <span aria-hidden className="mx-2" />
+        <span style={{ color: "var(--color-ochre)", fontWeight: 600 }}>
+          Pilot 2026
+        </span>
+        <span aria-hidden style={{ opacity: 0.5 }}>·</span>
+        <span>Fertility + Aesthetics</span>
+        <span aria-hidden style={{ opacity: 0.5 }}>·</span>
+        <span>10 patients</span>
+        <span aria-hidden style={{ opacity: 0.5 }}>·</span>
+        <span>founder-led, €0</span>
+        <span aria-hidden style={{ marginLeft: 8 }} />
         <Link
           to="/book-call"
-          className="text-ochre underline underline-offset-4 decoration-1 hover:opacity-80 transition-opacity"
+          className="hover:opacity-80 transition-opacity"
+          style={{ color: "var(--color-paper)", fontWeight: 600 }}
         >
-          → BOOK A CALL
+          Book a 30-min intro call ›
         </Link>
       </div>
     </div>
