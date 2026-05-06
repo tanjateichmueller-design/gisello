@@ -192,11 +192,10 @@ export function JourneyTimeline() {
               }}
             />
             <div
-              className="absolute left-1/2 px-4"
+              className="absolute left-1/2"
               style={{
-                top: "50%",
-                transform: "translate(-50%, -50%)",
-                background: "var(--color-ink)",
+                bottom: "calc(100% + 8px)",
+                transform: "translateX(-50%)",
                 fontFamily: "var(--font-mono)",
                 fontSize: 10,
                 letterSpacing: "0.25em",
