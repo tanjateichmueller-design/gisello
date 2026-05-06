@@ -28,7 +28,7 @@ export function Hero() {
             <br />
             for cross-border
             <br />
-            <span style={{ fontStyle: "italic" }}>medical care.</span>
+            <span style={{ fontStyle: "italic", color: "var(--color-ink-accent)" }}>medical care.</span>
           </h1>
 
           <p

@@ -44,6 +44,7 @@
 
   /* GISELLO brand semantic tokens */
   --color-ink: var(--ink);
+  --color-ink-accent: var(--ink-accent);
   --color-paper: var(--paper);
   --color-paper-pure: var(--paper-pure);
   --color-rule: var(--rule);
