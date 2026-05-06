@@ -67,7 +67,7 @@
   /* Brand v6 palette — wireframe-aligned: white paper, near-black ink, dark-blue accent */
   --ink: oklch(0.18 0 0);                 /* near-black body text #1a1a1a */
   --gisello-blue: oklch(0.247 0.087 269); /* #1B2454 — brand blue */
-  --ink-accent: oklch(0.247 0.087 269);   /* dark blue #1B2454 — for italic accents */
+  --ink-accent: var(--gisello-blue);      /* dark blue for italic accents */
   --paper: oklch(1 0 0);                  /* pure white */
   --paper-pure: oklch(0.985 0 0);         /* near white for cards */
   --rule: oklch(0.88 0 0);                /* light gray rule */
