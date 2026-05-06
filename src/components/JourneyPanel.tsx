@@ -26,7 +26,7 @@ const DETAILS: Detail[] = [
 const STATS: Detail[] = [
   { label: "ONE PERSON", value: "Tanja" },
   { label: "RECORDS", value: "Yours" },
-  { label: "COST TO YOU", value: "€0" },
+  { label: "COST TO YOU", value: "Coordination fee" },
   { label: "SLOTS LEFT", value: "7 / 10" },
 ];
 
