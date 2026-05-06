@@ -1,13 +1,13 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { MarkLockup } from "./CompanionMark";
 
 const NAV = [
-  { label: "Who we are", href: "/#who" },
-  { label: "How it works", href: "/how-it-works" },
-  { label: "Pilot", href: "/pilot" },
-  { label: "Founder", href: "#founder" },
-  { label: "Writing", href: "#writing" },
-  { label: "What's next", href: "#whats-next" },
+  { label: "What we do", href: "/#who" },
+  { label: "Compliance", href: "/#compliance" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Writing", href: "/#field-notes" },
+  { label: "Company", href: "/#company", caret: true },
 ];
 
 export function NavBar() {
@@ -31,32 +31,46 @@ export function NavBar() {
             <a
               key={n.label}
               href={n.href}
-              className="text-ink hover:text-ochre transition-colors"
+              className="text-ink hover:text-ochre transition-colors inline-flex items-center"
               style={{
                 fontFamily: "var(--font-sans)",
                 fontWeight: 500,
                 fontSize: 14,
+                gap: 4,
               }}
             >
               {n.label}
+              {n.caret && (
+                <span aria-hidden style={{ fontSize: 10, marginTop: 2 }}>▾</span>
+              )}
             </a>
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center" style={{ gap: 18 }}>
           <a
             href="#login"
-            className="inline-flex items-center justify-center border border-ink text-ink hover:bg-ink hover:text-paper transition-colors"
+            className="text-ink hover:text-ochre transition-colors"
             style={{
-              fontFamily: "var(--font-mono)",
-              fontSize: 11,
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              padding: "12px 20px",
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              fontSize: 14,
             }}
           >
-            LOGIN
+            Login
           </a>
+          <Link
+            to="/book-call"
+            className="inline-flex items-center justify-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors rounded-full"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              fontSize: 13,
+              padding: "8px 20px",
+            }}
+          >
+            Apply
+          </Link>
         </div>
 
         <button
