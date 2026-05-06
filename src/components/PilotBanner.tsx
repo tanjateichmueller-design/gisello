@@ -3,8 +3,8 @@ import { Link } from "@tanstack/react-router";
 export function PilotBanner() {
   return (
     <div
-      className="w-full bg-ink text-paper"
-      style={{ padding: "10px 48px" }}
+      className="w-full text-paper"
+      style={{ padding: "10px 48px", background: "var(--color-gisello-blue)" }}
     >
       <div
         className="mx-auto flex items-center justify-center flex-wrap"
