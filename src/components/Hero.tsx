@@ -26,9 +26,10 @@ export function Hero() {
           >
             AI navigators
             <br />
-            for cross-border
+            for{" "}
+            <span style={{ color: "var(--color-gisello-blue)" }}>cross-border</span>
             <br />
-            <span style={{ fontStyle: "italic", color: "var(--color-ink-accent)" }}>medical care.</span>
+            <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>medical care.</span>
           </h1>
 
           <p

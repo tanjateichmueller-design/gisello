@@ -3,8 +3,8 @@ import { MarkLockup } from "./CompanionMark";
 export function Footer() {
   return (
     <footer
-      className="bg-ink text-paper"
-      style={{ padding: "60px 48px" }}
+      className="text-paper"
+      style={{ padding: "60px 48px", background: "var(--color-gisello-blue)" }}
     >
       <div className="mx-auto" style={{ maxWidth: 1280 }}>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">

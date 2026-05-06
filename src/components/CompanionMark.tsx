@@ -45,7 +45,7 @@ export function Wordmark({ inverse = false, size = 16 }: { inverse?: boolean; si
         fontWeight: 600,
         letterSpacing: "0.04em",
         fontSize: size,
-        color: inverse ? "var(--color-paper)" : "var(--color-ink)",
+        color: inverse ? "var(--color-paper)" : "var(--color-gisello-blue)",
         lineHeight: 1,
       }}
     >
