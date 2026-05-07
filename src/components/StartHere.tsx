@@ -4,8 +4,7 @@ export function StartHere() {
   return (
     <section
       id="start"
-      className="text-paper" style={{ background: "var(--color-gisello-blue)" }}
-      style={{ padding: "120px 48px 100px" }}
+      className="text-paper" style={{ background: "var(--color-gisello-blue)", padding: "120px 48px 100px" }}
     >
       <div
         className="mx-auto text-center flex flex-col items-center"
