@@ -63,19 +63,14 @@ function FounderPage() {
           <div style={mono()}>The letter</div>
           <div className="mt-6" style={{ fontFamily: "var(--font-sans)", fontSize: 16, lineHeight: 1.75, color: "var(--color-ink)" }}>
             <p>
-              The first time I tried to coordinate cross-border medical care for someone
-              I love, the system fell apart at every handoff. Records did not travel.
-              Clinics chose us based on who paid the platform, not who would treat us
-              best. Insurance claims were rejected on technicalities no one warned us
-              about. The decisions were ours, but the information was nowhere.
+              [ Opening, the personal trigger. The moment when navigating cross-border
+              care alone became unworkable. Setting: country, year, what was at stake.
+              4-6 sentences of plain, specific language. ]
             </p>
             <p className="mt-6">
-              The structural problem is simple. Medical records are written for one
-              clinic at a time, in one language, on one schema. The moment a patient
-              crosses a border, the record stops working. The platforms that promise to
-              help are paid by the clinics they recommend, so the patient is the product,
-              not the customer. Insurance failure rates for cross-border claims sit far
-              higher than anyone publishes.
+              [ Paragraph 2, what was structurally broken. Records that didn't travel.
+              Clinics chosen by who paid the platform. Insurance claim failure rates.
+              The data points that became your thesis. 5-7 sentences. ]
             </p>
 
             <blockquote
@@ -90,23 +85,17 @@ function FounderPage() {
                 color: "var(--color-gisello-blue)",
               }}
             >
-              GISELLO is the system I needed and could not find, for myself, and for the
-              14 million patients who cross borders every year without one.
+              [ Pull-quote, the one line that captures why GISELLO exists. ~15-20 words. ]
             </blockquote>
 
             <p>
-              GISELLO is built on a Cyborg Model. AI does the structured work, ingesting
-              records in any of 11 languages, normalizing them to a FHIR-aligned schema,
-              drafting clinical briefs, and ranking clinics on outcomes. A human, a
-              named Patient Navigator and a signing MD, makes every decision that
-              matters. The pilot is founder-led. The patient pays, never the clinic, so
-              the loyalty stays with the patient.
+              [ Paragraph 3, what GISELLO is, in plain language. The Cyborg Model: AI for
+              cognition, humans for judgement. Founder-led pilot. Why the patient pays,
+              not the clinic. 5-7 sentences. ]
             </p>
             <p className="mt-6">
-              We open Centres of Excellence one at a time, starting with fertility in
-              2026. Ten patients, free of coordination fees, one year, one founder. If
-              we earn that, we open the next. We will be measured by outcomes, not by
-              volume, and we will publish what we learn.
+              [ Paragraph 4, what comes next. Five Centres of Excellence. Why fertility
+              first. The promise to ten pilot patients. Closing 4-5 sentences. ]
             </p>
 
             <p
