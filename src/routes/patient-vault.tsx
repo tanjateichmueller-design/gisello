@@ -114,10 +114,14 @@ function VaultPage() {
                   fontFamily: "var(--font-mono)",
                   fontSize: 10,
                   letterSpacing: "0.2em",
-                  color: "var(--color-gisello-blue)",
+                  color: "#1f9d55",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 6,
                 }}
               >
-                ● ENCRYPTED
+                <span style={{ width: 8, height: 8, borderRadius: 999, background: "#1f9d55", display: "inline-block" }} />
+                ENCRYPTED
               </span>
             </div>
             <div
