@@ -85,7 +85,7 @@ function PilotPage() {
     <PageShell subnavTitle="GISELLO · Pilot 2026">
       {/* Hero */}
       <section style={{ padding: "80px 48px 60px" }}>
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1fr]" style={{ maxWidth: 1180, gap: 64 }}>
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[1.6fr_320px] items-start" style={{ maxWidth: 1180, gap: 48 }}>
           <div>
             <div style={mono()}>Pilot 2026 · Cohort 01</div>
             <h1 className="mt-6" style={display()}>
