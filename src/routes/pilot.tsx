@@ -85,7 +85,7 @@ function PilotPage() {
     <PageShell subnavTitle="GISELLO · Pilot 2026">
       {/* Hero */}
       <section style={{ padding: "80px 48px 60px" }}>
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1fr]" style={{ maxWidth: 1180, gap: 64 }}>
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-[1.6fr_320px] items-start" style={{ maxWidth: 1180, gap: 48 }}>
           <div>
             <div style={mono()}>Pilot 2026 · Cohort 01</div>
             <h1 className="mt-6" style={display()}>
@@ -124,7 +124,7 @@ function PilotPage() {
               border: "1px solid var(--color-rule)",
               borderRadius: 12,
               background: "var(--color-paper-pure)",
-              padding: 28,
+              padding: 20,
             }}
           >
             <div className="flex items-center justify-between">
@@ -157,16 +157,16 @@ function PilotPage() {
             </div>
 
             <div
-              className="mt-6"
-              style={{ fontFamily: "var(--font-display)", fontSize: 36, lineHeight: 1.1, color: "var(--color-ink)", fontWeight: 500 }}
+              className="mt-5"
+              style={{ fontFamily: "var(--font-display)", fontSize: 26, lineHeight: 1.1, color: "var(--color-ink)", fontWeight: 500 }}
             >
               3 / 10 enrolled
             </div>
-            <div className="mt-1" style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--color-gray-60)" }}>
+            <div className="mt-1" style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--color-gray-60)" }}>
               7 slots open · applications reviewed weekly
             </div>
 
-            <div className="mt-6 grid grid-cols-5" style={{ gap: 10 }}>
+            <div className="mt-5 grid grid-cols-5" style={{ gap: 6 }}>
               {SLOTS.map((s) => (
                 <div
                   key={s.n}
