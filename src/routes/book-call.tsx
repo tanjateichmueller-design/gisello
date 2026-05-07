@@ -88,7 +88,7 @@ function BookCallPage() {
       <NavBar />
       <main>
         {/* 01 — Hero */}
-        <section className="bg-ink text-paper" style={{ padding: "100px 48px 120px" }}>
+        <section className="text-paper" style={{ background: "var(--color-gisello-blue)",  padding: "100px 48px 120px" }}>
           <div className="mx-auto" style={{ maxWidth: 1280 }}>
             <span
               style={{
@@ -640,8 +640,8 @@ function BookCallPage() {
         {/* 04 — Privacy & Data */}
         <section
           id="privacy"
-          className="bg-ink text-paper"
-          style={{ padding: "100px 48px" }}
+          className="text-paper"
+          style={{ background: "var(--color-gisello-blue)", padding: "100px 48px" }}
         >
           <div className="mx-auto" style={{ maxWidth: 1400 }}>
             <div className="flex items-center justify-between flex-wrap gap-3">
@@ -754,8 +754,8 @@ function BookCallPage() {
 
         {/* 04B — Applicable regimes */}
         <section
-          className="bg-ink text-paper"
-          style={{ padding: "20px 48px 120px" }}
+          className="text-paper"
+          style={{ background: "var(--color-gisello-blue)", padding: "20px 48px 120px" }}
         >
           <div className="mx-auto" style={{ maxWidth: 1400 }}>
             <div className="flex items-center justify-between flex-wrap gap-3">
