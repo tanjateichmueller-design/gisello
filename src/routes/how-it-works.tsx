@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PilotBanner } from "@/components/PilotBanner";
 import { NavBar } from "@/components/NavBar";
-import { FlowSection } from "@/components/FlowSection";
-import { AntiPositioning } from "@/components/AntiPositioning";
-import { StartHere } from "@/components/StartHere";
+import { SubNav } from "@/components/SubNav";
+import { HowItWorksPage } from "@/components/HowItWorksPage";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/how-it-works")({
@@ -14,13 +13,13 @@ export const Route = createFileRoute("/how-it-works")({
       {
         name: "description",
         content:
-          "From intake to follow-up. One companion across five phases of cross-border fertility care. AI handles the cognition. Humans handle the care.",
+          "Five phases. One companion. Records that travel with you. AI handles documents and matching. A human makes every decision that matters.",
       },
       { property: "og:title", content: "How it works · GISELLO" },
       {
         property: "og:description",
         content:
-          "One companion across five phases. Founder-led, AI-supported cross-border fertility care.",
+          "Five phases of cross-border fertility care, founder-led and AI-supported.",
       },
     ],
   }),
@@ -31,10 +30,9 @@ function HowItWorks() {
     <div id="top" className="min-h-screen bg-paper">
       <PilotBanner />
       <NavBar />
+      <SubNav title="GISELLO · How it works" />
       <main>
-        <FlowSection />
-        <AntiPositioning />
-        <StartHere />
+        <HowItWorksPage />
       </main>
       <Footer />
     </div>
