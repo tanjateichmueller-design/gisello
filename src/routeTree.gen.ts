@@ -9,14 +9,53 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WritingRouteImport } from './routes/writing'
+import { Route as WhatsNextRouteImport } from './routes/whats-next'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as PressRouteImport } from './routes/press'
 import { Route as PilotRouteImport } from './routes/pilot'
+import { Route as PatientVaultRouteImport } from './routes/patient-vault'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as FounderRouteImport } from './routes/founder'
+import { Route as ComplianceRouteImport } from './routes/compliance'
 import { Route as BookCallRouteImport } from './routes/book-call'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WritingRoute = WritingRouteImport.update({
+  id: '/writing',
+  path: '/writing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatsNextRoute = WhatsNextRouteImport.update({
+  id: '/whats-next',
+  path: '/whats-next',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PressRoute = PressRouteImport.update({
+  id: '/press',
+  path: '/press',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PilotRoute = PilotRouteImport.update({
   id: '/pilot',
   path: '/pilot',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PatientVaultRoute = PatientVaultRouteImport.update({
+  id: '/patient-vault',
+  path: '/patient-vault',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HowItWorksRoute = HowItWorksRouteImport.update({
@@ -24,9 +63,24 @@ const HowItWorksRoute = HowItWorksRouteImport.update({
   path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FounderRoute = FounderRouteImport.update({
+  id: '/founder',
+  path: '/founder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ComplianceRoute = ComplianceRouteImport.update({
+  id: '/compliance',
+  path: '/compliance',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BookCallRoute = BookCallRouteImport.update({
   id: '/book-call',
   path: '/book-call',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -37,45 +91,163 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/book-call': typeof BookCallRoute
+  '/compliance': typeof ComplianceRoute
+  '/founder': typeof FounderRoute
   '/how-it-works': typeof HowItWorksRoute
+  '/patient-vault': typeof PatientVaultRoute
   '/pilot': typeof PilotRoute
+  '/press': typeof PressRoute
+  '/pricing': typeof PricingRoute
+  '/terms': typeof TermsRoute
+  '/whats-next': typeof WhatsNextRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/book-call': typeof BookCallRoute
+  '/compliance': typeof ComplianceRoute
+  '/founder': typeof FounderRoute
   '/how-it-works': typeof HowItWorksRoute
+  '/patient-vault': typeof PatientVaultRoute
   '/pilot': typeof PilotRoute
+  '/press': typeof PressRoute
+  '/pricing': typeof PricingRoute
+  '/terms': typeof TermsRoute
+  '/whats-next': typeof WhatsNextRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/book-call': typeof BookCallRoute
+  '/compliance': typeof ComplianceRoute
+  '/founder': typeof FounderRoute
   '/how-it-works': typeof HowItWorksRoute
+  '/patient-vault': typeof PatientVaultRoute
   '/pilot': typeof PilotRoute
+  '/press': typeof PressRoute
+  '/pricing': typeof PricingRoute
+  '/terms': typeof TermsRoute
+  '/whats-next': typeof WhatsNextRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/book-call' | '/how-it-works' | '/pilot'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/book-call'
+    | '/compliance'
+    | '/founder'
+    | '/how-it-works'
+    | '/patient-vault'
+    | '/pilot'
+    | '/press'
+    | '/pricing'
+    | '/terms'
+    | '/whats-next'
+    | '/writing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/book-call' | '/how-it-works' | '/pilot'
-  id: '__root__' | '/' | '/book-call' | '/how-it-works' | '/pilot'
+  to:
+    | '/'
+    | '/about'
+    | '/book-call'
+    | '/compliance'
+    | '/founder'
+    | '/how-it-works'
+    | '/patient-vault'
+    | '/pilot'
+    | '/press'
+    | '/pricing'
+    | '/terms'
+    | '/whats-next'
+    | '/writing'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/book-call'
+    | '/compliance'
+    | '/founder'
+    | '/how-it-works'
+    | '/patient-vault'
+    | '/pilot'
+    | '/press'
+    | '/pricing'
+    | '/terms'
+    | '/whats-next'
+    | '/writing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   BookCallRoute: typeof BookCallRoute
+  ComplianceRoute: typeof ComplianceRoute
+  FounderRoute: typeof FounderRoute
   HowItWorksRoute: typeof HowItWorksRoute
+  PatientVaultRoute: typeof PatientVaultRoute
   PilotRoute: typeof PilotRoute
+  PressRoute: typeof PressRoute
+  PricingRoute: typeof PricingRoute
+  TermsRoute: typeof TermsRoute
+  WhatsNextRoute: typeof WhatsNextRoute
+  WritingRoute: typeof WritingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/writing': {
+      id: '/writing'
+      path: '/writing'
+      fullPath: '/writing'
+      preLoaderRoute: typeof WritingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/whats-next': {
+      id: '/whats-next'
+      path: '/whats-next'
+      fullPath: '/whats-next'
+      preLoaderRoute: typeof WhatsNextRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/press': {
+      id: '/press'
+      path: '/press'
+      fullPath: '/press'
+      preLoaderRoute: typeof PressRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pilot': {
       id: '/pilot'
       path: '/pilot'
       fullPath: '/pilot'
       preLoaderRoute: typeof PilotRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/patient-vault': {
+      id: '/patient-vault'
+      path: '/patient-vault'
+      fullPath: '/patient-vault'
+      preLoaderRoute: typeof PatientVaultRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/how-it-works': {
@@ -85,11 +257,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/founder': {
+      id: '/founder'
+      path: '/founder'
+      fullPath: '/founder'
+      preLoaderRoute: typeof FounderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compliance': {
+      id: '/compliance'
+      path: '/compliance'
+      fullPath: '/compliance'
+      preLoaderRoute: typeof ComplianceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/book-call': {
       id: '/book-call'
       path: '/book-call'
       fullPath: '/book-call'
       preLoaderRoute: typeof BookCallRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -104,9 +297,18 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   BookCallRoute: BookCallRoute,
+  ComplianceRoute: ComplianceRoute,
+  FounderRoute: FounderRoute,
   HowItWorksRoute: HowItWorksRoute,
+  PatientVaultRoute: PatientVaultRoute,
   PilotRoute: PilotRoute,
+  PressRoute: PressRoute,
+  PricingRoute: PricingRoute,
+  TermsRoute: TermsRoute,
+  WhatsNextRoute: WhatsNextRoute,
+  WritingRoute: WritingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
