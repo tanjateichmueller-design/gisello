@@ -157,16 +157,16 @@ function PilotPage() {
             </div>
 
             <div
-              className="mt-6"
-              style={{ fontFamily: "var(--font-display)", fontSize: 36, lineHeight: 1.1, color: "var(--color-ink)", fontWeight: 500 }}
+              className="mt-5"
+              style={{ fontFamily: "var(--font-display)", fontSize: 26, lineHeight: 1.1, color: "var(--color-ink)", fontWeight: 500 }}
             >
               3 / 10 enrolled
             </div>
-            <div className="mt-1" style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--color-gray-60)" }}>
+            <div className="mt-1" style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--color-gray-60)" }}>
               7 slots open · applications reviewed weekly
             </div>
 
-            <div className="mt-6 grid grid-cols-5" style={{ gap: 10 }}>
+            <div className="mt-5 grid grid-cols-5" style={{ gap: 6 }}>
               {SLOTS.map((s) => (
                 <div
                   key={s.n}
