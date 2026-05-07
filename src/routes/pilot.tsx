@@ -124,7 +124,7 @@ function PilotPage() {
               border: "1px solid var(--color-rule)",
               borderRadius: 12,
               background: "var(--color-paper-pure)",
-              padding: 28,
+              padding: 20,
             }}
           >
             <div className="flex items-center justify-between">
