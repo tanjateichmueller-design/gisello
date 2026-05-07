@@ -4,7 +4,7 @@ export function StartHere() {
   return (
     <section
       id="start"
-      className="bg-ink text-paper"
+      className="text-paper" style={{ background: "var(--color-gisello-blue)" }}
       style={{ padding: "120px 48px 100px" }}
     >
       <div

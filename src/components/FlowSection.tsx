@@ -129,7 +129,7 @@ export function FlowSection() {
       {/* Navy intro band */}
       <section
         id="flow"
-        className="bg-ink text-paper"
+        className="text-paper" style={{ background: "var(--color-gisello-blue)" }}
         style={{ padding: "120px 48px" }}
       >
         <div className="mx-auto" style={{ maxWidth: 1280 }}>
@@ -201,7 +201,7 @@ export function FlowSection() {
               className="bg-paper-pure"
               style={{ borderTop: "3px solid var(--color-ochre)" }}
             >
-              <div className="aspect-[4/3] overflow-hidden bg-ink">
+              <div className="aspect-[4/3] overflow-hidden" style={{ background: "var(--color-gisello-blue)" }}>
                 <img
                   src={testimonialImg}
                   alt="Mother holding her newborn after fertility treatment"

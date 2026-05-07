@@ -106,7 +106,7 @@ function PilotPage() {
       <main>
         {/* Hero band */}
         <section
-          className="bg-ink text-paper"
+          className="text-paper" style={{ background: "var(--color-gisello-blue)" }}
           style={{ padding: "120px 48px" }}
         >
           <div className="mx-auto" style={{ maxWidth: 1280 }}>

@@ -117,7 +117,7 @@ export function JourneyTimeline() {
   return (
     <section
       id="flow"
-      className="bg-ink text-paper"
+      className="text-paper" style={{ background: "var(--color-gisello-blue)" }}
       style={{ padding: "120px 48px" }}
     >
       <div className="mx-auto" style={{ maxWidth: 1440 }}>
