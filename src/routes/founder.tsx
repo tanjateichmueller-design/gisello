@@ -22,9 +22,9 @@ export const Route = createFileRoute("/founder")({
 });
 
 const PLACES = [
-  { tag: "Weimar", title: "Where I'm from", body: "Origin and the formative experiences shaping a patient-first lens." },
-  { tag: "9 yrs Amazon", title: "Where I learned to build systems", body: "Roles, scale, the operational discipline I bring to GISELLO." },
-  { tag: "Dubai", title: "Where Gisello lives", body: "Why Dubai, the DHA pathway, the regulated home for cross-border care." },
+  { tag: "Weimar", title: "Where I'm from", body: "[ 2-3 sentences on origin and the formative experiences shaping a patient-first lens. ]" },
+  { tag: "9 yrs Amazon", title: "Where I learned to build systems", body: "[ 2-3 sentences on roles, scale, the operational discipline you bring to GISELLO. ]" },
+  { tag: "Dubai", title: "Where Gisello lives", body: "[ 2-3 sentences on why Dubai, DHA pathway, the regulated home for cross-border care. ]" },
 ];
 
 function FounderPage() {
