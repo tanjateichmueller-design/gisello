@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 
 const ITEMS = [
   { label: "How it works", href: "/how-it-works" },
-  { label: "About Gisello", href: "/#who" },
+  { label: "About Gisello", href: "/about" },
   { label: "Pilot", href: "/pilot" },
-  { label: "Patient Vault", href: "/#vault" },
+  { label: "Patient Vault", href: "/patient-vault" },
 ];
 
 export function SubNav({ title = "GISELLO Pilot · Cohort 01" }: { title?: string } = {}) {
@@ -54,8 +54,8 @@ export function SubNav({ title = "GISELLO Pilot · Cohort 01" }: { title?: strin
         </nav>
 
         <div className="flex items-center" style={{ gap: 12 }}>
-          <a
-            href="#founder"
+          <Link
+            to="/founder"
             className="hidden md:inline-flex items-center justify-center border border-ink text-ink hover:bg-ink hover:text-paper transition-colors rounded-full"
             style={{
               fontFamily: "var(--font-sans)",
@@ -65,7 +65,7 @@ export function SubNav({ title = "GISELLO Pilot · Cohort 01" }: { title?: strin
             }}
           >
             Talk to founder
-          </a>
+          </Link>
           <Link
             to="/book-call"
             className="inline-flex items-center justify-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors rounded-full"
