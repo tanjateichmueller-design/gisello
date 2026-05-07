@@ -7,7 +7,7 @@ const ITEMS = [
   { label: "Patient Vault", href: "/#vault" },
 ];
 
-export function SubNav() {
+export function SubNav({ title = "GISELLO Pilot · Cohort 01" }: { title?: string } = {}) {
   return (
     <div
       className="w-full bg-paper border-b"
@@ -26,7 +26,7 @@ export function SubNav() {
             letterSpacing: "0.01em",
           }}
         >
-          GISELLO Pilot · Cohort 01
+          {title}
         </span>
 
         <nav className="hidden md:flex items-center" style={{ gap: 28 }}>
