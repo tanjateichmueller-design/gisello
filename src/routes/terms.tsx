@@ -7,8 +7,15 @@ export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
       { title: "Terms · GISELLO" },
-      { name: "description", content: "GISELLO terms and conditions." },
+      {
+        name: "description",
+        content:
+          "GISELLO terms and conditions for the Patient Navigator service, the Vault, and the 2026 founder-led pilot cohort. Full terms published before Cohort 01 onboarding.",
+      },
+      { property: "og:title", content: "Terms · GISELLO" },
+      { property: "og:url", content: "https://www.gisello.com/terms" },
     ],
+    links: [{ rel: "canonical", href: "https://www.gisello.com/terms" }],
   }),
 });
 

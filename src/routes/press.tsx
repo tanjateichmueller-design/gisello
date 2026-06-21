@@ -7,8 +7,15 @@ export const Route = createFileRoute("/press")({
   head: () => ({
     meta: [
       { title: "Press & PR · GISELLO" },
-      { name: "description", content: "Press and PR enquiries for GISELLO." },
+      {
+        name: "description",
+        content:
+          "Press, media, and interview enquiries for GISELLO, the founder-led practice coordinating cross-border fertility and aesthetic care with AI navigators.",
+      },
+      { property: "og:title", content: "Press & PR · GISELLO" },
+      { property: "og:url", content: "https://www.gisello.com/press" },
     ],
+    links: [{ rel: "canonical", href: "https://www.gisello.com/press" }],
   }),
 });
 

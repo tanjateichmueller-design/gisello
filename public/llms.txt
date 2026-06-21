@@ -1,0 +1,22 @@
+# GISELLO
+
+> AI navigators for cross-border medical care. GISELLO coordinates fertility and aesthetic treatment across borders, combining AI for cognition with a Patient Navigator for judgement.
+
+## Pages
+
+- [Home](/): Overview of the GISELLO system: Vault, Brief, Match, and the Patient Navigator.
+- [How it works](/how-it-works): The four phases of a coordinated cross-border treatment journey.
+- [Patient Vault](/patient-vault): How the medical record vault works for patients and clinics.
+- [Pilot](/pilot): Founder-led 2026 pilot cohort details and eligibility.
+- [Pricing](/pricing): Pricing for the pilot and ongoing service.
+- [Founder](/founder): Founder letter and the origin of GISELLO.
+- [About](/about): Mission, background, and the team behind GISELLO.
+- [Writing](/writing): Field notes and essays on cross-border care.
+- [What's next](/whats-next): Roadmap and upcoming releases.
+- [Book a call](/book-call): Schedule an intake call with a Patient Navigator.
+- [Press](/press): Press and PR enquiries.
+- [Compliance](/compliance): Regulatory, data, and clinical compliance posture.
+
+## Optional
+
+- [Terms](/terms): Terms and conditions.

@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WritingRouteImport } from './routes/writing'
 import { Route as WhatsNextRouteImport } from './routes/whats-next'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PressRouteImport } from './routes/press'
 import { Route as PilotRouteImport } from './routes/pilot'
@@ -36,6 +37,11 @@ const WhatsNextRoute = WhatsNextRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingRoute = PricingRouteImport.update({
@@ -100,6 +106,7 @@ export interface FileRoutesByFullPath {
   '/pilot': typeof PilotRoute
   '/press': typeof PressRoute
   '/pricing': typeof PricingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/whats-next': typeof WhatsNextRoute
   '/writing': typeof WritingRoute
@@ -115,6 +122,7 @@ export interface FileRoutesByTo {
   '/pilot': typeof PilotRoute
   '/press': typeof PressRoute
   '/pricing': typeof PricingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/whats-next': typeof WhatsNextRoute
   '/writing': typeof WritingRoute
@@ -131,6 +139,7 @@ export interface FileRoutesById {
   '/pilot': typeof PilotRoute
   '/press': typeof PressRoute
   '/pricing': typeof PricingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/whats-next': typeof WhatsNextRoute
   '/writing': typeof WritingRoute
@@ -148,6 +157,7 @@ export interface FileRouteTypes {
     | '/pilot'
     | '/press'
     | '/pricing'
+    | '/sitemap.xml'
     | '/terms'
     | '/whats-next'
     | '/writing'
@@ -163,6 +173,7 @@ export interface FileRouteTypes {
     | '/pilot'
     | '/press'
     | '/pricing'
+    | '/sitemap.xml'
     | '/terms'
     | '/whats-next'
     | '/writing'
@@ -178,6 +189,7 @@ export interface FileRouteTypes {
     | '/pilot'
     | '/press'
     | '/pricing'
+    | '/sitemap.xml'
     | '/terms'
     | '/whats-next'
     | '/writing'
@@ -194,6 +206,7 @@ export interface RootRouteChildren {
   PilotRoute: typeof PilotRoute
   PressRoute: typeof PressRoute
   PricingRoute: typeof PricingRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   WhatsNextRoute: typeof WhatsNextRoute
   WritingRoute: typeof WritingRoute
@@ -220,6 +233,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing': {
@@ -306,6 +326,7 @@ const rootRouteChildren: RootRouteChildren = {
   PilotRoute: PilotRoute,
   PressRoute: PressRoute,
   PricingRoute: PricingRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   WhatsNextRoute: WhatsNextRoute,
   WritingRoute: WritingRoute,

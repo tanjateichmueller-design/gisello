@@ -29,18 +29,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Gisello Dreamscape connects individuals with fertility treatments abroad, offering personalized matching and end-to-end coordination." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Gisello Dreamscape connects individuals with fertility treatments abroad, offering personalized matching and end-to-end coordination." },
+      { title: "GISELLO — AI navigators for cross-border medical care" },
+      { property: "og:site_name", content: "GISELLO" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Gisello Dreamscape connects individuals with fertility treatments abroad, offering personalized matching and end-to-end coordination." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e0a62d7e-01b2-4fa6-b9ae-1c5f80836dde/id-preview-2a937095--6751245e-cdf2-4774-8d69-b30806023871.lovable.app-1778145161202.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e0a62d7e-01b2-4fa6-b9ae-1c5f80836dde/id-preview-2a937095--6751245e-cdf2-4774-8d69-b30806023871.lovable.app-1778145161202.png" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
