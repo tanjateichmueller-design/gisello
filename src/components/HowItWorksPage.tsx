@@ -116,7 +116,7 @@ function PhaseRow({ p }: { p: Phase }) {
       </div>
 
       <div>
-        <h3
+        <h2
           style={{
             fontFamily: "var(--font-display)",
             fontSize: 38,
@@ -126,7 +126,7 @@ function PhaseRow({ p }: { p: Phase }) {
           }}
         >
           {p.title}
-        </h3>
+        </h2>
         <div
           className="mt-2"
           style={{
