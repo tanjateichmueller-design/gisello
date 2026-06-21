@@ -16,15 +16,17 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "GISELLO coordinates fertility and aesthetic treatment across borders, from first call to final follow-up, combining AI for cognition with a Patient Navigator for judgement.",
+          "GISELLO coordinates fertility and aesthetic treatment across borders, combining AI for cognition with a Patient Navigator for judgement.",
       },
       { property: "og:title", content: "GISELLO · AI navigators for cross-border medical care" },
+      { property: "og:url", content: "https://www.gisello.com/" },
       {
         property: "og:description",
         content:
           "Founder-led pilot 2026. Vault, Brief, Match. Three layers, one Patient Navigator.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://www.gisello.com/" }],
   }),
 });
 
