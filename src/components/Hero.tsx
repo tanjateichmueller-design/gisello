@@ -1,82 +1,67 @@
 import { Link } from "@tanstack/react-router";
-import { JourneyPanel } from "./JourneyPanel";
+import heroBg from "@/assets/hero-suite.jpg";
 
 export function Hero() {
   return (
     <section
       id="who"
-      className="bg-paper"
-      style={{ padding: "72px 48px 96px" }}
+      className="relative w-full"
+      style={{
+        minHeight: "calc(100vh - 120px)",
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
+      {/* Tint overlay */}
       <div
-        className="mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] items-center"
-        style={{ maxWidth: 1280, gap: 64 }}
-      >
-        {/* LEFT */}
-        <div>
-          <h1
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(48px, 6.4vw, 84px)",
-              lineHeight: 1.02,
-              letterSpacing: "-0.025em",
-              color: "var(--color-ink)",
-              fontWeight: 500,
-            }}
-          >
-            Patient Navigators
-            <br />
-            for{" "}
-            <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>cross-border</span>
-            <br />
-            <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>medical care.</span>
-          </h1>
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, color-mix(in oklab, var(--color-gisello-blue) 35%, transparent) 0%, color-mix(in oklab, var(--color-gisello-blue) 55%, transparent) 100%)",
+        }}
+      />
 
-          <p
-            className="mt-7"
+      <div
+        className="relative mx-auto flex flex-col items-center justify-center text-center"
+        style={{
+          maxWidth: 1100,
+          padding: "140px 32px 160px",
+          minHeight: "calc(100vh - 120px)",
+        }}
+      >
+        <h1
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "clamp(40px, 6vw, 80px)",
+            lineHeight: 1.05,
+            letterSpacing: "-0.02em",
+            color: "var(--color-paper)",
+            fontWeight: 500,
+            textShadow: "0 2px 24px rgba(0,0,0,0.25)",
+          }}
+        >
+          Access to world-class medical care
+          <br />
+          <span style={{ fontStyle: "italic" }}>
+            with your Patient Navigator every step of the way.
+          </span>
+        </h1>
+
+        <div className="mt-12">
+          <Link
+            id="book"
+            to="/book-call"
+            className="inline-flex items-center justify-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors rounded-full"
             style={{
               fontFamily: "var(--font-sans)",
-              fontSize: 16.5,
-              lineHeight: 1.55,
-              color: "var(--color-gray-60)",
-              maxWidth: 480,
+              fontSize: 15,
+              fontWeight: 500,
+              padding: "16px 32px",
             }}
           >
-            A real person guides your cross-border journey, from the first call to your final follow-up. AI does the heavy lifting in the background so nothing slips, your Patient Navigator does the thinking, listening, and deciding with you.
-          </p>
-
-          <div className="mt-8 flex flex-wrap items-center" style={{ gap: 12 }}>
-            <Link
-              id="book"
-              to="/book-call"
-              className="inline-flex items-center justify-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors rounded-full"
-              style={{
-                fontFamily: "var(--font-sans)",
-                fontSize: 14,
-                fontWeight: 500,
-                padding: "13px 26px",
-              }}
-            >
-              Book a 30-min call →
-            </Link>
-            <Link
-              to="/how-it-works"
-              className="inline-flex items-center justify-center border border-ink text-ink hover:bg-ink hover:text-paper transition-colors rounded-full"
-              style={{
-                fontFamily: "var(--font-sans)",
-                fontSize: 14,
-                fontWeight: 500,
-                padding: "13px 26px",
-              }}
-            >
-              How it works
-            </Link>
-          </div>
-        </div>
-
-        {/* RIGHT — journey panel */}
-        <div>
-          <JourneyPanel />
+            Book a 30 minute call →
+          </Link>
         </div>
       </div>
     </section>
