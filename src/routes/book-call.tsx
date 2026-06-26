@@ -10,7 +10,7 @@ export const Route = createFileRoute("/book-call")({
       {
         name: "description",
         content:
-          "Thirty minutes, no agenda, no medical records required. Talk to the founder before you decide anything.",
+          "Book a 30 minute call with your Patient Navigator. Talk to us before you decide anything.",
       },
       { name: "robots", content: "noindex, nofollow" },
       { property: "og:title", content: "Book a call · GISELLO" },
@@ -58,7 +58,7 @@ function BookCallPage() {
               anything.
             </h1>
             <p className="mt-8" style={lead()}>
-              Thirty minutes, no agenda, no medical records required. We listen, we ask the questions a clinician would, and give you a first view on potential clinics matched to your medical needs and preferences. If GISELLO is not the right fit, we will tell you who is.
+              Book a 30 minute call with your Patient Navigator. We listen, we ask the questions a clinician would, and give you a first view on potential clinics matched to your medical needs and preferences. If GISELLO is not the right fit, we will tell you who is.
             </p>
 
           </div>
