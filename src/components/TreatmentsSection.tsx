@@ -67,8 +67,8 @@ export function TreatmentsSection() {
                 src={t.img}
                 alt={t.title}
                 loading="lazy"
-                width={1024}
-                height={1024}
+                width={960}
+                height={1280}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div
