@@ -43,6 +43,7 @@ function Index() {
       </div>
       <main>
         <TreatmentsSection />
+        <PatientJourneySection />
         <SystemSection />
         <FounderQuoteBlock />
         <FieldNotes />
