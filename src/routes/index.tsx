@@ -33,7 +33,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div id="top" className="min-h-screen bg-paper">
-      <PilotBanner />
+      
       <NavBar />
       <SubNav />
       <main>
