@@ -159,3 +159,18 @@
   letter-spacing: -0.02em;
   font-weight: 500;
 }
+
+/* Transparent nav overlay (hero) */
+.nav-transparent a,
+.nav-transparent button:not([type="submit"]) {
+  color: var(--color-paper) !important;
+}
+.nav-transparent .bg-ink {
+  background-color: transparent !important;
+  border: 1px solid var(--color-paper) !important;
+}
+.nav-transparent .bg-ink:hover {
+  background-color: var(--color-ochre) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-ochre) !important;
+}
