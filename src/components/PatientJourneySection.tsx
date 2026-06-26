@@ -40,7 +40,7 @@ const STEPS: Step[] = [
     title: "After Treatment",
     body: "Recovery support, home GP handoff, and aftercare coordination. Care that does not stop at departure.",
   },
-  { img: aftercare, label: "Month 12", phase: "after" },
+  { img: aftercare, label: "Week 8", phase: "after" },
 ];
 
 const PHASE_COLOR: Record<Step["phase"], string> = {
