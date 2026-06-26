@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import intake from "@/assets/hero-patient-doctor.jpg";
-import brief from "@/assets/journey-navigator-call.jpg";
+import brief from "@/assets/journey-ai-matching.jpg";
 import match from "@/assets/journey-bloodtest.jpg";
 import virtualConsult from "@/assets/journey-virtual-consult.jpg";
 import travel from "@/assets/hero-suite.jpg";
