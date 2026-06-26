@@ -85,11 +85,12 @@ export function Hero() {
             textShadow: "0 2px 24px rgba(0,0,0,0.3)",
           }}
         >
-          Access to world-class medical care
+          Experience seamless, world-class medical care
           <br />
           <span style={{ fontStyle: "italic" }}>
-            without any wait time, with your Patient Navigator every step of the way.
+            with no wait times and a dedicated Patient Navigator at your side.
           </span>
+
         </h1>
 
         <div className="mt-12">
