@@ -7,11 +7,14 @@ const ITEMS = [
   { label: "Patient Vault", href: "/patient-vault" },
 ];
 
-export function SubNav({ title = "GISELLO Pilot · Cohort 01" }: { title?: string } = {}) {
+export function SubNav({
+  title = "GISELLO Pilot · Cohort 01",
+  transparent = false,
+}: { title?: string; transparent?: boolean } = {}) {
   return (
     <div
-      className="w-full bg-paper border-b"
-      style={{ borderColor: "var(--color-rule)" }}
+      className={`w-full ${transparent ? "nav-transparent border-b-0" : "bg-paper border-b"}`}
+      style={transparent ? undefined : { borderColor: "var(--color-rule)" }}
     >
       <div
         className="mx-auto flex items-center justify-between"

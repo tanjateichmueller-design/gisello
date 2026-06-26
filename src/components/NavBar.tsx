@@ -23,21 +23,22 @@ const NAV: NavItem[] = [
   },
 ];
 
-export function NavBar() {
+export function NavBar({ transparent = false }: { transparent?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
 
+
   return (
     <header
-      className="w-full bg-paper border-b sticky top-0 z-40"
-      style={{ borderColor: "var(--color-rule)" }}
+      className={`w-full top-0 z-40 ${transparent ? "nav-transparent" : "bg-paper border-b sticky"}`}
+      style={transparent ? undefined : { borderColor: "var(--color-rule)" }}
     >
       <div
         className="mx-auto flex items-center justify-between"
         style={{ maxWidth: 1280, padding: "24px 48px" }}
       >
         <Link to="/" aria-label="GISELLO home">
-          <MarkLockup size={32} wordSize={16} />
+          <MarkLockup size={32} wordSize={16} inverse={transparent} />
         </Link>
 
         <nav className="hidden md:flex items-center" style={{ gap: 32 }}>
