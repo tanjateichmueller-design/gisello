@@ -27,21 +27,28 @@ const STEPS: Step[] = [
   { img: brief, label: "Week 1", phase: "before" },
   { img: match, label: "Week 2", phase: "before" },
   {
-    img: travel,
+    img: virtualConsult,
     label: "Week 3",
+    phase: "before",
+    title: "Virtual Consultations",
+    body: "From home, you review your patient file and meet shortlisted clinics on virtual intro calls. Your Patient Navigator joins every call, so you are never on your own.",
+  },
+  {
+    img: travel,
+    label: "Week 4",
     phase: "during",
     title: "During Treatment",
     body: "We coordinate travel, accommodation, and your clinic team. You arrive prepared, never alone.",
   },
-  { img: treatment, label: "Week 4", phase: "during" },
+  { img: treatment, label: "Week 5", phase: "during" },
   {
     img: recovery,
-    label: "Week 6",
+    label: "Week 7",
     phase: "after",
     title: "After Treatment",
     body: "Recovery support, home GP handoff, and aftercare coordination. Care that does not stop at departure.",
   },
-  { img: aftercare, label: "Week 8", phase: "after" },
+  { img: aftercare, label: "Week 9", phase: "after" },
 ];
 
 const PHASE_COLOR: Record<Step["phase"], string> = {
