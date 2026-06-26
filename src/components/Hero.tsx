@@ -24,10 +24,10 @@ export function Hero() {
               fontWeight: 500,
             }}
           >
-            AI navigators
+            Patient Navigators
             <br />
             for{" "}
-            <span style={{ color: "var(--color-gisello-blue)" }}>cross-border</span>
+            <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>cross-border</span>
             <br />
             <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>medical care.</span>
           </h1>
@@ -42,7 +42,7 @@ export function Hero() {
               maxWidth: 480,
             }}
           >
-            GISELLO coordinates fertility and aesthetic treatment across borders, from first call to final follow-up, combining AI for cognition with a Patient Navigator for judgement.
+            A real person guides your fertility or aesthetic treatment abroad, from the first call to your final follow-up. AI does the heavy lifting in the background so nothing slips, your Patient Navigator does the thinking, listening, and deciding with you.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center" style={{ gap: 12 }}>
