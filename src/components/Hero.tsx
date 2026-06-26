@@ -7,14 +7,22 @@ import heroDoctor from "@/assets/hero-doctor.jpg";
 import heroPatientWaiting from "@/assets/hero-patient-waiting.jpg";
 import heroPatientDoctor from "@/assets/hero-patient-doctor.jpg";
 import heroPatientClinical from "@/assets/hero-patient-clinical.jpg";
+import heroNursesCorridor from "@/assets/hero-nurses-corridor.jpg";
+import heroNurseWorking from "@/assets/hero-nurse-working.jpg";
+import heroSurgicalTeam from "@/assets/hero-surgical-team.jpg";
+import heroClinicModern from "@/assets/hero-clinic-modern.jpg";
 
 const SLIDES = [
-  heroSuite,
-  heroPatientWaiting,
-  heroClinic,
+  heroClinicModern,
+  heroNursesCorridor,
   heroPatientDoctor,
-  heroDoctor,
+  heroSurgicalTeam,
+  heroPatientWaiting,
+  heroNurseWorking,
   heroPatientClinical,
+  heroClinic,
+  heroDoctor,
+  heroSuite,
 ];
 
 export function Hero() {
