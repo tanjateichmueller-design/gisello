@@ -5,6 +5,7 @@ import { Hero } from "@/components/Hero";
 import { SystemSection } from "@/components/SystemSection";
 import { FounderQuoteBlock } from "@/components/FounderQuoteBlock";
 import { FieldNotes } from "@/components/FieldNotes";
+import { TreatmentsSection } from "@/components/TreatmentsSection";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
@@ -40,6 +41,7 @@ function Index() {
         <Hero />
       </div>
       <main>
+        <TreatmentsSection />
         <SystemSection />
         <FounderQuoteBlock />
         <FieldNotes />
