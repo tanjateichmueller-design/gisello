@@ -30,8 +30,8 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
 
   return (
     <header
-      className={`w-full top-0 z-40 ${transparent ? "absolute nav-transparent" : "bg-paper border-b sticky"}`}
-      style={transparent ? { left: 0, right: 0 } : { borderColor: "var(--color-rule)" }}
+      className={`w-full top-0 z-40 ${transparent ? "nav-transparent" : "bg-paper border-b sticky"}`}
+      style={transparent ? undefined : { borderColor: "var(--color-rule)" }}
     >
       <div
         className="mx-auto flex items-center justify-between"
