@@ -42,7 +42,7 @@ export function Hero() {
               maxWidth: 480,
             }}
           >
-            A real person guides your fertility or aesthetic treatment abroad, from the first call to your final follow-up. AI does the heavy lifting in the background so nothing slips, your Patient Navigator does the thinking, listening, and deciding with you.
+            A real person guides your cross-border journey, from the first call to your final follow-up. AI does the heavy lifting in the background so nothing slips, your Patient Navigator does the thinking, listening, and deciding with you.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center" style={{ gap: 12 }}>
