@@ -23,14 +23,17 @@ const NAV: NavItem[] = [
   },
 ];
 
-export function NavBar() {
+export function NavBar({ transparent = false }: { transparent?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
+  const linkStyle = transparent
+    ? { color: "var(--color-paper)" }
+    : { color: "var(--color-ink)" };
 
   return (
     <header
-      className="w-full bg-paper border-b sticky top-0 z-40"
-      style={{ borderColor: "var(--color-rule)" }}
+      className={`w-full top-0 z-40 ${transparent ? "absolute" : "bg-paper border-b sticky"}`}
+      style={transparent ? { left: 0, right: 0 } : { borderColor: "var(--color-rule)" }}
     >
       <div
         className="mx-auto flex items-center justify-between"
