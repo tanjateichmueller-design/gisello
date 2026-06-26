@@ -10,7 +10,7 @@ export const Route = createFileRoute("/book-call")({
       {
         name: "description",
         content:
-          "Thirty minutes, no agenda, no medical records required. Talk to the founder before you decide anything.",
+          "Book a 30 minute call with your Patient Navigator. Talk to us before you decide anything.",
       },
       { name: "robots", content: "noindex, nofollow" },
       { property: "og:title", content: "Book a call · GISELLO" },
