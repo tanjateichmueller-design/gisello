@@ -1,24 +1,49 @@
+import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import heroBg from "@/assets/hero-suite.jpg";
+import heroSuite from "@/assets/hero-suite.jpg";
+import heroClinic from "@/assets/hero-clinic.jpg";
+import heroDoctor from "@/assets/hero-doctor.jpg";
+
+const SLIDES = [heroSuite, heroClinic, heroDoctor];
 
 export function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % SLIDES.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section
       id="who"
-      className="relative w-full"
-      style={{
-        minHeight: "calc(100vh - 120px)",
-        backgroundImage: `url(${heroBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative w-full overflow-hidden"
+      style={{ minHeight: "calc(100vh - 120px)" }}
     >
+      {/* Slideshow layers */}
+      {SLIDES.map((src, i) => (
+        <div
+          key={src}
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: i === index ? 1 : 0,
+            transform: i === index ? "scale(1.05)" : "scale(1)",
+            transition: "opacity 1.6s ease-in-out, transform 6s ease-out",
+          }}
+        />
+      ))}
+
       {/* Tint overlay */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, color-mix(in oklab, var(--color-gisello-blue) 35%, transparent) 0%, color-mix(in oklab, var(--color-gisello-blue) 55%, transparent) 100%)",
+            "linear-gradient(180deg, color-mix(in oklab, var(--color-gisello-blue) 40%, transparent) 0%, color-mix(in oklab, var(--color-gisello-blue) 60%, transparent) 100%)",
         }}
       />
 
@@ -38,13 +63,13 @@ export function Hero() {
             letterSpacing: "-0.02em",
             color: "var(--color-paper)",
             fontWeight: 500,
-            textShadow: "0 2px 24px rgba(0,0,0,0.25)",
+            textShadow: "0 2px 24px rgba(0,0,0,0.3)",
           }}
         >
           Access to world-class medical care
           <br />
           <span style={{ fontStyle: "italic" }}>
-            with your Patient Navigator every step of the way.
+            without any wait time, with your Patient Navigator every step of the way.
           </span>
         </h1>
 
