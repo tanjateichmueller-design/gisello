@@ -21,7 +21,7 @@ const STEPS: Step[] = [
     label: "Day 0",
     phase: "before",
     title: "Before Treatment",
-    body: "Our AI matches you with best-in-class clinics. Your Patient Navigator supports you through decision-making and intro calls with the clinic.",
+    body: "Our AI matches you with best-in-class clinics. Your Patient Navigator supports you through decision-making and intro calls with the clinic. Your AI companion Gina is available 24/7 for questions.",
   },
   { img: brief, label: "Week 1", phase: "before" },
   { img: match, label: "Week 2", phase: "before" },
