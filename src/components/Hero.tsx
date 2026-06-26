@@ -107,6 +107,37 @@ export function Hero() {
             Book a 30 minute call →
           </Link>
         </div>
+
+        <a
+          href="#treatments"
+          className="mt-10 inline-flex flex-col items-center group"
+          style={{
+            color: "var(--color-paper)",
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            letterSpacing: "0.22em",
+            textTransform: "uppercase",
+            opacity: 0.85,
+          }}
+        >
+          <span>See the treatments</span>
+          <svg
+            width="20"
+            height="28"
+            viewBox="0 0 20 28"
+            fill="none"
+            className="mt-2 animate-bounce"
+            style={{ animationDuration: "2s" }}
+          >
+            <path
+              d="M10 4 V22 M3 15 L10 22 L17 15"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
       </div>
     </section>
   );
