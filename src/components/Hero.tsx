@@ -87,9 +87,8 @@ export function Hero() {
         >
           Experience seamless, world-class medical care
           <br />
-          <span style={{ fontStyle: "italic" }}>
-            with no wait times and a dedicated Patient Navigator at your side.
-          </span>
+          with no wait times and a dedicated Patient Navigator at your side.
+
 
         </h1>
 
