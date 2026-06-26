@@ -58,7 +58,7 @@ function BookCallPage() {
               anything.
             </h1>
             <p className="mt-8" style={lead()}>
-              Book a 30 minute call with your Patient Navigator. We listen, we ask the questions a clinician would, and give you a first view on potential clinics matched to your medical needs and preferences. If GISELLO is not the right fit, we will tell you who is.
+              Book a 30 minute call with your dedicated Patient Navigator, your one human point of contact across the whole journey. We listen, ask the questions a clinician would, and use our AI-enabled infrastructure to match you with the best clinic abroad based on your medical records and personal preferences. If GISELLO is not the right fit, we will tell you who is.
             </p>
 
           </div>
