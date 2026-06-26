@@ -4,7 +4,18 @@ import heroSuite from "@/assets/hero-suite.jpg";
 import heroClinic from "@/assets/hero-clinic.jpg";
 import heroDoctor from "@/assets/hero-doctor.jpg";
 
-const SLIDES = [heroSuite, heroClinic, heroDoctor];
+import heroPatientWaiting from "@/assets/hero-patient-waiting.jpg";
+import heroPatientDoctor from "@/assets/hero-patient-doctor.jpg";
+import heroPatientClinical from "@/assets/hero-patient-clinical.jpg";
+
+const SLIDES = [
+  heroSuite,
+  heroPatientWaiting,
+  heroClinic,
+  heroPatientDoctor,
+  heroDoctor,
+  heroPatientClinical,
+];
 
 export function Hero() {
   const [index, setIndex] = useState(0);
