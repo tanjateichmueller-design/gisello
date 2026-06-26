@@ -32,7 +32,7 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
 
   return (
     <header
-      className={`w-full top-0 z-40 ${transparent ? "absolute" : "bg-paper border-b sticky"}`}
+      className={`w-full top-0 z-40 ${transparent ? "absolute nav-transparent" : "bg-paper border-b sticky"}`}
       style={transparent ? { left: 0, right: 0 } : { borderColor: "var(--color-rule)" }}
     >
       <div
@@ -40,7 +40,7 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
         style={{ maxWidth: 1280, padding: "24px 48px" }}
       >
         <Link to="/" aria-label="GISELLO home">
-          <MarkLockup size={32} wordSize={16} />
+          <MarkLockup size={32} wordSize={16} inverse={transparent} />
         </Link>
 
         <nav className="hidden md:flex items-center" style={{ gap: 32 }}>
