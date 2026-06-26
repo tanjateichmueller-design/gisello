@@ -26,9 +26,7 @@ const NAV: NavItem[] = [
 export function NavBar({ transparent = false }: { transparent?: boolean } = {}) {
   const [open, setOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
-  const linkStyle = transparent
-    ? { color: "var(--color-paper)" }
-    : { color: "var(--color-ink)" };
+
 
   return (
     <header
