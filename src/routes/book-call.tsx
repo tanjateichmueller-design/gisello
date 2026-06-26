@@ -52,7 +52,7 @@ function BookCallPage() {
               <br />
               Patient Navigator
               <br />
-              <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>before</span>{" "}
+              before{" "}
               you decide
               <br />
               anything.
