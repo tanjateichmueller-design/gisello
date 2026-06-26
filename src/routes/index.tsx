@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PilotBanner } from "@/components/PilotBanner";
 import { NavBar } from "@/components/NavBar";
 import { SubNav } from "@/components/SubNav";
 import { Hero } from "@/components/Hero";
@@ -33,11 +32,14 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div id="top" className="min-h-screen bg-paper">
-      
-      <NavBar />
-      <SubNav />
-      <main>
+      <div className="relative">
+        <div className="absolute inset-x-0 top-0 z-30">
+          <NavBar transparent />
+          <SubNav transparent />
+        </div>
         <Hero />
+      </div>
+      <main>
         <SystemSection />
         <FounderQuoteBlock />
         <FieldNotes />
