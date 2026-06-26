@@ -48,9 +48,9 @@ function BookCallPage() {
           <div>
             <div style={mono()}>Step 01 of 14</div>
             <h1 className="mt-6" style={display()}>
-              Talk to the
+              Talk to your
               <br />
-              founder
+              Patient Navigator
               <br />
               <span style={{ fontStyle: "italic", color: "var(--color-gisello-blue)" }}>before</span>{" "}
               you decide
@@ -58,10 +58,9 @@ function BookCallPage() {
               anything.
             </h1>
             <p className="mt-8" style={lead()}>
-              Thirty minutes, no agenda, no medical records required. We listen, we ask
-              the questions a clinician would, we tell you whether GISELLO is the right
-              fit. If we are not, we will tell you who is.
+              Thirty minutes, no agenda, no medical records required. We listen, we ask the questions a clinician would, and give you a first view on potential clinics matched to your medical needs and preferences. If GISELLO is not the right fit, we will tell you who is.
             </p>
+
           </div>
 
           <aside
