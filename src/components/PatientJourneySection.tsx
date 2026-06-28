@@ -105,9 +105,45 @@ export function PatientJourneySection() {
           </h2>
         </div>
 
-        {/* Steps */}
+        {/* Phase headers */}
         <div
           className="mt-24 grid"
+          style={{
+            gridTemplateColumns: `repeat(${STEPS.length}, minmax(0, 1fr))`,
+            gap: 20,
+            alignItems: "start",
+          }}
+        >
+          {PHASES.map((p, i) => (
+            <div key={i} style={{ gridColumn: `span ${p.span}` }}>
+              <div
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  fontWeight: 700,
+                  fontSize: 17,
+                  color: p.color,
+                }}
+              >
+                {p.title}
+              </div>
+              <p
+                className="mt-2"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 13,
+                  lineHeight: 1.55,
+                  color: "var(--color-gray-60)",
+                }}
+              >
+                {p.body}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Steps */}
+        <div
+          className="mt-6 grid"
           style={{
             gridTemplateColumns: `repeat(${STEPS.length}, minmax(0, 1fr))`,
             gap: 20,
@@ -115,34 +151,7 @@ export function PatientJourneySection() {
           }}
         >
           {STEPS.map((s, i) => (
-            <div key={i} className="flex flex-col">
-              {s.title ? (
-                <div className="mb-4" style={{ minHeight: 110 }}>
-                  <div
-                    style={{
-                      fontFamily: "var(--font-sans)",
-                      fontWeight: 700,
-                      fontSize: 17,
-                      color: "var(--color-gisello-blue)",
-                    }}
-                  >
-                    {s.title}
-                  </div>
-                  <p
-                    className="mt-2"
-                    style={{
-                      fontFamily: "var(--font-sans)",
-                      fontSize: 13,
-                      lineHeight: 1.55,
-                      color: "var(--color-gray-60)",
-                    }}
-                  >
-                    {s.body}
-                  </p>
-                </div>
-              ) : (
-                <div className="mb-4" style={{ minHeight: 110 }} />
-              )}
+            <div key={i}>
               <div
                 style={{
                   width: "100%",
