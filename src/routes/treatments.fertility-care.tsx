@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { NavBar } from "@/components/NavBar";
-import { SubNav } from "@/components/SubNav";
+
 import { Footer } from "@/components/Footer";
 
 import heroImg from "@/assets/fertility-hero.jpg";
@@ -157,7 +157,7 @@ function FertilityCarePage() {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 z-30">
           <NavBar transparent />
-          <SubNav transparent />
+          
         </div>
         <section
           className="relative w-full overflow-hidden"
