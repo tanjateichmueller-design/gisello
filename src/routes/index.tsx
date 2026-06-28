@@ -52,7 +52,6 @@ function Index() {
         <SystemDetailsTeaser />
         <VaultTeaserSection />
         <NavigatorsSection />
-        <PartnerClinicsSection />
         <TestimonialsCarousel />
         <FieldNotes />
         <FinalCTA />
