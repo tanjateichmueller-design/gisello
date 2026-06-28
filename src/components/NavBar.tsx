@@ -58,6 +58,7 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
               >
                 <button
                   type="button"
+                  aria-expanded={openMenu === n.label}
                   onClick={() => setOpenMenu((o) => (o === n.label ? null : n.label))}
                   className="text-ink hover:text-ochre transition-colors inline-flex items-center"
                   style={{
@@ -73,31 +74,37 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
                 </button>
                 {openMenu === n.label && (
                   <div
-                    className="absolute left-0 bg-paper border"
+                    className="nav-dropdown absolute left-0"
                     style={{
                       top: "100%",
-                      marginTop: 8,
-                      borderColor: "var(--color-rule)",
+                      paddingTop: 8,
                       minWidth: 200,
-                      padding: 8,
                       zIndex: 50,
                     }}
                   >
-                    {n.children.map((c) => (
-                      <Link
-                        key={c.label}
-                        to={c.to}
-                        onClick={() => setOpenMenu(null)}
-                        className="block text-ink hover:text-ochre transition-colors"
-                        style={{
-                          fontFamily: "var(--font-sans)",
-                          fontSize: 14,
-                          padding: "8px 12px",
-                        }}
-                      >
-                        {c.label}
-                      </Link>
-                    ))}
+                    <div
+                      className="bg-paper border"
+                      style={{
+                        borderColor: "var(--color-rule)",
+                        padding: 8,
+                      }}
+                    >
+                      {n.children.map((c) => (
+                        <Link
+                          key={c.label}
+                          to={c.to}
+                          onClick={() => setOpenMenu(null)}
+                          className="block text-ink hover:text-ochre transition-colors"
+                          style={{
+                            fontFamily: "var(--font-sans)",
+                            fontSize: 14,
+                            padding: "8px 12px",
+                          }}
+                        >
+                          {c.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
