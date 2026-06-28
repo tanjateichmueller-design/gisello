@@ -344,6 +344,85 @@ function GiselloSystemPage() {
         </div>
       </section>
 
+      {/* Pre & After Care */}
+      <section style={{ padding: "80px 48px" }}>
+        <div
+          className="mx-auto grid"
+          style={{ maxWidth: 1100, gap: 48, gridTemplateColumns: "1fr 1.1fr", alignItems: "center" }}
+        >
+          <img
+            src={preAfterCare}
+            alt="Pre and after care consultation"
+            loading="lazy"
+            width={1024}
+            height={1024}
+            style={{ width: "100%", aspectRatio: "1 / 1", objectFit: "cover" }}
+          />
+          <div>
+            <span
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: 11,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "var(--color-ochre)",
+              }}
+            >
+              Pre & After Care
+            </span>
+            <h2
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(28px, 3.4vw, 42px)",
+                color: "var(--color-gisello-blue)",
+                fontWeight: 500,
+                letterSpacing: "-0.015em",
+                marginTop: 12,
+                marginBottom: 18,
+              }}
+            >
+              Continuous care, before and after treatment.
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: 15.5,
+                lineHeight: 1.65,
+                color: "color-mix(in oklab, var(--color-gisello-blue) 78%, transparent)",
+                marginBottom: 16,
+              }}
+            >
+              Pre and after care is handled through the Gisello partner network. From pre-treatment
+              health checks and travel preparation to post-treatment follow-ups and recovery
+              coordination, you are never left to manage it alone.
+            </p>
+            <ul style={{ display: "grid", gap: 10, listStyle: "none", padding: 0, margin: 0 }}>
+              {[
+                "Pre-treatment screening and health optimization via partner clinics",
+                "Travel and accommodation planning aligned with your care schedule",
+                "Post-treatment follow-ups coordinated across borders",
+                "Recovery monitoring and ongoing Navigator check-ins",
+              ].map((b) => (
+                <li
+                  key={b}
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: 14,
+                    lineHeight: 1.55,
+                    color: "color-mix(in oklab, var(--color-gisello-blue) 75%, transparent)",
+                    paddingLeft: 16,
+                    position: "relative",
+                  }}
+                >
+                  <span style={{ position: "absolute", left: 0, color: "var(--color-ochre)" }}>•</span>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Planning */}
       <section
         style={{
