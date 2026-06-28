@@ -85,11 +85,7 @@ export function Hero() {
             textShadow: "0 2px 24px rgba(0,0,0,0.3)",
           }}
         >
-          Experience seamless, world-class medical care
-          <br />
-          with no wait times and a dedicated Patient Navigator at your side.
-
-
+          World-class care. Zero wait. A navigator at your side.
         </h1>
 
         <div className="mt-12">
