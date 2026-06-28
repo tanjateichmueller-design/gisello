@@ -482,17 +482,15 @@ function FertilityCarePage() {
                 >
                   <th style={{ padding: 18, textAlign: "left" }}>Treatment</th>
                   <th style={{ padding: 18, textAlign: "left" }}>UK (home, private)</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>Czech Republic</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>Spain</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>Greece</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>Max save vs UK</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ["IVF, own eggs", "€7,500", "€2,500", "€5,500", "€3,200"],
-                  ["IVF, donor eggs", "€11,500", "€4,500", "€7,500", "€5,200"],
-                  ["Egg freezing", "€5,200", "€2,200", "€3,200", "€2,500"],
-                  ["Embryo freezing & storage", "€2,200", "€600", "€900", "€700"],
+                  ["IVF, own eggs", "€7,500", "Up to €5,000"],
+                  ["IVF, donor eggs", "€11,500", "Up to €7,000"],
+                  ["Egg freezing", "€5,200", "Up to €3,000"],
+                  ["Embryo freezing & storage", "€2,200", "Up to €1,600"],
                 ].map((row, i) => (
                   <tr
                     key={row[0]}
@@ -505,8 +503,8 @@ function FertilityCarePage() {
                         key={j}
                         style={{
                           padding: 18,
-                          color: j === 1 ? "var(--color-ink)" : j === 0 ? "var(--color-ink)" : "var(--color-ochre)",
-                          fontWeight: j === 0 || j === 1 ? 400 : 500,
+                          color: j === 2 ? "var(--color-ochre)" : "var(--color-ink)",
+                          fontWeight: j === 2 ? 500 : 400,
                         }}
                       >
                         {cell}
