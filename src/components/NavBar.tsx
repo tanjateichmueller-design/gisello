@@ -288,6 +288,17 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
         </nav>
 
         <div className="hidden md:flex items-center" style={{ gap: 18 }}>
+          <Link
+            to="/book-call"
+            className="text-ink hover:text-ochre transition-colors"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              fontSize: 14,
+            }}
+          >
+            Book Call
+          </Link>
           <a
             href="#login"
             className="text-ink hover:text-ochre transition-colors"
@@ -297,20 +308,8 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
               fontSize: 14,
             }}
           >
-            Login
+            Patient Portal
           </a>
-          <Link
-            to="/book-call"
-            className="inline-flex items-center justify-center bg-ink text-paper hover:bg-ochre hover:text-ink transition-colors rounded-full"
-            style={{
-              fontFamily: "var(--font-sans)",
-              fontWeight: 500,
-              fontSize: 13,
-              padding: "8px 20px",
-            }}
-          >
-            Apply
-          </Link>
         </div>
 
         <button
