@@ -30,7 +30,7 @@ const CARDS: Card[] = [
     img: companion,
     label: 'AI Companion "Gina"',
     title: "Instant answers, 24/7.",
-    body: "Chat or voice, grounded in your records and your stage of the journey. No waiting rooms.",
+    body: "Chat or voice, grounded in your records and your stage of the journey.",
   },
   {
     img: preAfterCare,
