@@ -3,7 +3,6 @@ import { Link } from "@tanstack/react-router";
 const ITEMS = [
   { label: "How it works", href: "/how-it-works" },
   { label: "About Gisello", href: "/about" },
-  { label: "Pilot", href: "/pilot" },
   { label: "Patient Vault", href: "/patient-vault" },
 ];
 
