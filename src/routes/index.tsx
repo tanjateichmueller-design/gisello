@@ -7,7 +7,7 @@ import { PatientJourneySection } from "@/components/PatientJourneySection";
 
 import { SystemDetailsTeaser } from "@/components/SystemDetailsTeaser";
 import { VaultTeaserSection } from "@/components/VaultTeaserSection";
-import { NavigatorsSection } from "@/components/NavigatorsSection";
+
 
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { FieldNotes } from "@/components/FieldNotes";
@@ -51,7 +51,7 @@ function Index() {
         
         <SystemDetailsTeaser />
         <VaultTeaserSection />
-        <NavigatorsSection />
+        
         <TestimonialsCarousel />
         <FieldNotes />
         <FinalCTA />
