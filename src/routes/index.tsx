@@ -5,6 +5,7 @@ import { Hero } from "@/components/Hero";
 import { TreatmentsSection } from "@/components/TreatmentsSection";
 import { PatientJourneySection } from "@/components/PatientJourneySection";
 import { SystemSection } from "@/components/SystemSection";
+import { SystemDetailsTeaser } from "@/components/SystemDetailsTeaser";
 import { VaultTeaserSection } from "@/components/VaultTeaserSection";
 import { NavigatorsSection } from "@/components/NavigatorsSection";
 import { PartnerClinicsSection } from "@/components/PartnerClinicsSection";
@@ -48,6 +49,7 @@ function Index() {
         <TreatmentsSection />
         <PatientJourneySection />
         <SystemSection />
+        <SystemDetailsTeaser />
         <VaultTeaserSection />
         <NavigatorsSection />
         <PartnerClinicsSection />
