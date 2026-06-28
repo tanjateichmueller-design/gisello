@@ -165,6 +165,12 @@
 .nav-transparent button:not([type="submit"]) {
   color: var(--color-paper) !important;
 }
+.nav-transparent .nav-dropdown a {
+  color: var(--color-ink) !important;
+}
+.nav-transparent .nav-dropdown a:hover {
+  color: var(--color-ochre) !important;
+}
 .nav-transparent .bg-ink {
   background-color: transparent !important;
   border: 1px solid var(--color-paper) !important;
