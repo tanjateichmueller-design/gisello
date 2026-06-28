@@ -34,7 +34,7 @@ const PHASES = [
   },
   {
     title: "Virtual Consultations",
-    body: "From home, you review your patient file and meet shortlisted clinics on virtual intro calls. Your Patient Navigator joins every call, so you are never on your own.",
+    body: "In Week 3, clinics are shortlisted and you meet with your navigator to discuss the list. Then you decide which clinic you want to use for your treatment. You will meet them online as well and can ask questions.",
     span: 1,
     color: "var(--color-gisello-blue)",
   },
