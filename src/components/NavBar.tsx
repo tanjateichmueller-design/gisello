@@ -8,6 +8,12 @@ type NavItem =
 
 const NAV: NavItem[] = [
   { label: "What we do", to: "/how-it-works" },
+  {
+    label: "Treatments",
+    children: [
+      { label: "Fertility Care", to: "/treatments/fertility-care" },
+    ],
+  },
   { label: "Compliance", to: "/compliance" },
   { label: "Pricing", to: "/pricing" },
   { label: "Writing", to: "/writing" },
