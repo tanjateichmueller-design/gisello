@@ -53,12 +53,12 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
               <div
                 key={n.label}
                 className="relative"
-                onMouseEnter={() => setCompanyOpen(true)}
-                onMouseLeave={() => setCompanyOpen(false)}
+                onMouseEnter={() => setOpenMenu(n.label)}
+                onMouseLeave={() => setOpenMenu(null)}
               >
                 <button
                   type="button"
-                  onClick={() => setCompanyOpen((o) => !o)}
+                  onClick={() => setOpenMenu((o) => (o === n.label ? null : n.label))}
                   className="text-ink hover:text-ochre transition-colors inline-flex items-center"
                   style={{
                     fontFamily: "var(--font-sans)",
@@ -71,9 +71,9 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
                   {n.label}
                   <span aria-hidden style={{ fontSize: 10, marginTop: 2 }}>▾</span>
                 </button>
-                {companyOpen && (
+                {openMenu === n.label && (
                   <div
-                    className="absolute right-0 bg-paper border"
+                    className="absolute left-0 bg-paper border"
                     style={{
                       top: "100%",
                       marginTop: 8,
@@ -87,7 +87,7 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
                       <Link
                         key={c.label}
                         to={c.to}
-                        onClick={() => setCompanyOpen(false)}
+                        onClick={() => setOpenMenu(null)}
                         className="block text-ink hover:text-ochre transition-colors"
                         style={{
                           fontFamily: "var(--font-sans)",
