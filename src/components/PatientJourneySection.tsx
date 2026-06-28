@@ -28,7 +28,7 @@ const STEPS: Step[] = [
 const PHASES = [
   {
     title: "Before Treatment",
-    body: "We match you based on your medical records and preferences with best in class clinics. Your AI companion and Patient Navigator are with you every step, from initial intake through shortlisting. You will receive a shortlist of 3 to 5 clinics matching your medical profile and preferences. You review this list with the support of your Patient Navigator and decide where to go. You are supported through your medical journey from day one.",
+    body: "From day one, your Patient Navigator and AI companion work with you. We review your records and match you with 3 to 5 top clinics suited to your medical profile and preferences, then help you choose the right fit.",
     span: 4,
     color: "var(--color-gisello-blue)",
   },
