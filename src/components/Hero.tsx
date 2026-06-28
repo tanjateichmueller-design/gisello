@@ -85,7 +85,7 @@ export function Hero() {
             textShadow: "0 2px 24px rgba(0,0,0,0.3)",
           }}
         >
-          World-class care. Zero wait. A navigator at your side.
+          World-class care. Zero wait. A patient navigator by your side.
         </h1>
 
         <div className="mt-12">
