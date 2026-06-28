@@ -18,6 +18,7 @@ import { Route as PressRouteImport } from './routes/press'
 import { Route as PilotRouteImport } from './routes/pilot'
 import { Route as PatientVaultRouteImport } from './routes/patient-vault'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as GiselloSystemRouteImport } from './routes/gisello-system'
 import { Route as FounderRouteImport } from './routes/founder'
 import { Route as ComplianceRouteImport } from './routes/compliance'
 import { Route as BookCallRouteImport } from './routes/book-call'
@@ -70,6 +71,11 @@ const HowItWorksRoute = HowItWorksRouteImport.update({
   path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GiselloSystemRoute = GiselloSystemRouteImport.update({
+  id: '/gisello-system',
+  path: '/gisello-system',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FounderRoute = FounderRouteImport.update({
   id: '/founder',
   path: '/founder',
@@ -107,6 +113,7 @@ export interface FileRoutesByFullPath {
   '/book-call': typeof BookCallRoute
   '/compliance': typeof ComplianceRoute
   '/founder': typeof FounderRoute
+  '/gisello-system': typeof GiselloSystemRoute
   '/how-it-works': typeof HowItWorksRoute
   '/patient-vault': typeof PatientVaultRoute
   '/pilot': typeof PilotRoute
@@ -124,6 +131,7 @@ export interface FileRoutesByTo {
   '/book-call': typeof BookCallRoute
   '/compliance': typeof ComplianceRoute
   '/founder': typeof FounderRoute
+  '/gisello-system': typeof GiselloSystemRoute
   '/how-it-works': typeof HowItWorksRoute
   '/patient-vault': typeof PatientVaultRoute
   '/pilot': typeof PilotRoute
@@ -142,6 +150,7 @@ export interface FileRoutesById {
   '/book-call': typeof BookCallRoute
   '/compliance': typeof ComplianceRoute
   '/founder': typeof FounderRoute
+  '/gisello-system': typeof GiselloSystemRoute
   '/how-it-works': typeof HowItWorksRoute
   '/patient-vault': typeof PatientVaultRoute
   '/pilot': typeof PilotRoute
@@ -161,6 +170,7 @@ export interface FileRouteTypes {
     | '/book-call'
     | '/compliance'
     | '/founder'
+    | '/gisello-system'
     | '/how-it-works'
     | '/patient-vault'
     | '/pilot'
@@ -178,6 +188,7 @@ export interface FileRouteTypes {
     | '/book-call'
     | '/compliance'
     | '/founder'
+    | '/gisello-system'
     | '/how-it-works'
     | '/patient-vault'
     | '/pilot'
@@ -195,6 +206,7 @@ export interface FileRouteTypes {
     | '/book-call'
     | '/compliance'
     | '/founder'
+    | '/gisello-system'
     | '/how-it-works'
     | '/patient-vault'
     | '/pilot'
@@ -213,6 +225,7 @@ export interface RootRouteChildren {
   BookCallRoute: typeof BookCallRoute
   ComplianceRoute: typeof ComplianceRoute
   FounderRoute: typeof FounderRoute
+  GiselloSystemRoute: typeof GiselloSystemRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PatientVaultRoute: typeof PatientVaultRoute
   PilotRoute: typeof PilotRoute
@@ -290,6 +303,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gisello-system': {
+      id: '/gisello-system'
+      path: '/gisello-system'
+      fullPath: '/gisello-system'
+      preLoaderRoute: typeof GiselloSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/founder': {
       id: '/founder'
       path: '/founder'
@@ -341,6 +361,7 @@ const rootRouteChildren: RootRouteChildren = {
   BookCallRoute: BookCallRoute,
   ComplianceRoute: ComplianceRoute,
   FounderRoute: FounderRoute,
+  GiselloSystemRoute: GiselloSystemRoute,
   HowItWorksRoute: HowItWorksRoute,
   PatientVaultRoute: PatientVaultRoute,
   PilotRoute: PilotRoute,
