@@ -32,7 +32,7 @@ export const Route = createFileRoute("/gisello-system")({
 const SOLUTIONS = [
   {
     label: "Guided, on-demand support",
-    body: "A real human, your Patient Navigator, plus an AI companion on call. Whenever you need an answer, you get one.",
+    body: "A real human, your Patient Navigator, coordinates, handholds and guides you through the medical journey, plus an AI companion on call. Whenever you need an answer, you get one.",
   },
   {
     label: "Patient-first clinic matching",
