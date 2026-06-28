@@ -34,7 +34,7 @@ const PHASES = [
   },
   {
     title: "During Treatment",
-    body: "We coordinate travel, accommodation, and your clinic team. You arrive prepared, never alone.",
+    body: "We coordinate travel, accommodation, and your clinic team. You arrive prepared.",
     span: 2,
     color: "var(--color-ochre)",
   },
