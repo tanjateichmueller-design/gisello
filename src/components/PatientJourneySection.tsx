@@ -11,44 +11,45 @@ import aftercare from "@/assets/hero-doctor.jpg";
 interface Step {
   img: string;
   label: string;
-  title?: string;
-  body?: string;
   phase: "before" | "during" | "after";
 }
 
 const STEPS: Step[] = [
-  {
-    img: intake,
-    label: "Day 0",
-    phase: "before",
-    title: "Before Treatment",
-    body: "We match you based on medical record and preferences with best in class clinic. AI companion and Patient Navigator are handholding you through your medical journey.",
-  },
+  { img: intake, label: "Day 0", phase: "before" },
   { img: brief, label: "Week 1", phase: "before" },
   { img: match, label: "Week 2", phase: "before" },
+  { img: virtualConsult, label: "Week 3", phase: "before" },
+  { img: travel, label: "Week 4", phase: "during" },
+  { img: treatment, label: "Week 5", phase: "during" },
+  { img: recovery, label: "Week 7", phase: "after" },
+  { img: aftercare, label: "Week 9", phase: "after" },
+];
+
+const PHASES = [
   {
-    img: virtualConsult,
-    label: "Week 3",
-    phase: "before",
+    title: "Before Treatment",
+    body: "We match you based on medical record and preferences with best in class clinic. AI companion and Patient Navigator are handholding you through your medical journey.",
+    span: 3,
+    color: "var(--color-gisello-blue)",
+  },
+  {
     title: "Virtual Consultations",
     body: "From home, you review your patient file and meet shortlisted clinics on virtual intro calls. Your Patient Navigator joins every call, so you are never on your own.",
+    span: 1,
+    color: "var(--color-gisello-blue)",
   },
   {
-    img: travel,
-    label: "Week 4",
-    phase: "during",
     title: "During Treatment",
     body: "We coordinate travel, accommodation, and your clinic team. You arrive prepared, never alone.",
+    span: 2,
+    color: "var(--color-ochre)",
   },
-  { img: treatment, label: "Week 5", phase: "during" },
   {
-    img: recovery,
-    label: "Week 7",
-    phase: "after",
     title: "After Treatment",
     body: "Recovery support, home GP handoff, and aftercare coordination. Care that does not stop at departure.",
+    span: 2,
+    color: "#1f7a3a",
   },
-  { img: aftercare, label: "Week 9", phase: "after" },
 ];
 
 const PHASE_COLOR: Record<Step["phase"], string> = {
