@@ -33,9 +33,9 @@ const CARDS: Card[] = [
   },
   {
     img: backbone,
-    label: "AI backbone",
-    title: "Quiet tech behind it all.",
-    body: "Worker agents structure records, draft briefs and match clinics on fit, not kickbacks.",
+    label: "Patient Vault",
+    title: "Your records, safely stored.",
+    body: "Your medical records are stored safely in the Patient Vault, encrypted, structured and shareable only on your terms.",
   },
   {
     img: planning,
@@ -76,7 +76,7 @@ export function SystemDetailsTeaser() {
                 marginTop: 10,
               }}
             >
-              End-to-end support, two layers of help, one quiet AI backbone.
+              End-to-end support, two layers of help, one secure Patient Vault.
             </h3>
           </div>
           <Link
