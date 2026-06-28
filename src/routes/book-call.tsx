@@ -10,13 +10,13 @@ export const Route = createFileRoute("/book-call")({
       {
         name: "description",
         content:
-          "Book a 30 minute call with your dedicated Patient Navigator. We use our inhouse AI to match you with the best clinic abroad based on your medical records and personal preferences.",
+          "Book a 30 minute call with your dedicated Patient Navigator, your one human point of contact across the whole journey. We listen, ask the questions a clinician would, and use our AI-enabled infrastructure to match you with the best clinic abroad based on your medical records and personal preferences. If GISELLO is not the right fit, we will tell you who is.",
       },
       { name: "robots", content: "noindex, nofollow" },
       { property: "og:title", content: "Book a call · GISELLO" },
       {
         property: "og:description",
-        content: "Talk to the founder before you decide anything.",
+        content: "Book a 30 minute call with your dedicated Patient Navigator, your one human point of contact across the whole journey.",
       },
     ],
   }),
@@ -58,7 +58,7 @@ function BookCallPage() {
               anything.
             </h1>
             <p className="mt-8" style={lead()}>
-              Book a 30 minute call with your dedicated Patient Navigator. We use our inhouse AI to match you with the best clinic abroad based on your medical records and personal preferences.
+              Book a 30 minute call with your dedicated Patient Navigator, your one human point of contact across the whole journey. We listen, ask the questions a clinician would, and use our AI-enabled infrastructure to match you with the best clinic abroad based on your medical records and personal preferences. If GISELLO is not the right fit, we will tell you who is.
             </p>
 
           </div>
