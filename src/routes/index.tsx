@@ -51,7 +51,7 @@ function Index() {
         
         <SystemDetailsTeaser />
         <VaultTeaserSection />
-        <NavigatorsSection />
+        
         <TestimonialsCarousel />
         <FieldNotes />
         <FinalCTA />
