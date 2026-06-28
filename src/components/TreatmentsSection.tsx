@@ -1,11 +1,11 @@
-import wellness from "@/assets/treatment-wellness.jpg";
+import orthopaedic from "@/assets/treatment-orthopaedic.jpg";
 import dental from "@/assets/treatment-dental.jpg";
 import fertility from "@/assets/treatment-fertility.jpg";
 import aesthetics from "@/assets/treatment-aesthetics.jpg";
 
 const TREATMENTS = [
   { img: fertility, title: "Fertility Care", sub: "Personalised Fertility & IVF Support" },
-  { img: wellness, title: "Health 360 & Wellness", sub: "Diagnostics & Wellness Programmes" },
+  { img: orthopaedic, title: "Orthopedics", sub: "Joint Replacement, Sports Medicine & Spine" },
   { img: dental, title: "Dental", sub: "Corrective & Cosmetic Dentistry" },
   { img: aesthetics, title: "Aesthetics", sub: "Cosmetic & Aesthetic Treatments" },
 ];
