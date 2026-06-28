@@ -20,7 +20,7 @@ type MegaNav = {
 type NavItem = SimpleNav | DropdownNav | MegaNav;
 
 const NAV: NavItem[] = [
-  { type: "simple", label: "What we do", to: "/" },
+  { type: "simple", label: "Home", to: "/" },
   {
     type: "mega",
     label: "Treatments",
