@@ -33,10 +33,10 @@ const CARDS: Card[] = [
     body: "Chat or voice, grounded in your records and your stage of the journey. No waiting rooms.",
   },
   {
-    img: backbone,
-    label: "Patient Portal",
-    title: "Your records, safely stored.",
-    body: "Your medical records are stored safely in the Patient Portal, encrypted, structured and shareable only on your terms.",
+    img: preAfterCare,
+    label: "Pre & After Care",
+    title: "Care before and after treatment.",
+    body: "Pre and after care handled through the Gisello partner network. Screenings, follow-ups and recovery, coordinated across borders.",
   },
   {
     img: planning,
@@ -45,10 +45,10 @@ const CARDS: Card[] = [
     body: "We plan around your calendar, the clinic's availability and your treatment, all in one timeline.",
   },
   {
-    img: preAfterCare,
-    label: "Pre & After Care",
-    title: "Care before and after treatment.",
-    body: "Pre and after care handled through the Gisello partner network. Screenings, follow-ups and recovery, coordinated across borders.",
+    img: backbone,
+    label: "Patient Portal",
+    title: "Your records, safely stored.",
+    body: "Your medical records are stored safely in the Patient Portal, encrypted, structured and shareable only on your terms.",
   },
 ];
 
