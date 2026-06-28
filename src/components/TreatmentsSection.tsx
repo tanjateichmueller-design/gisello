@@ -30,6 +30,8 @@ export function TreatmentsSection() {
             The treatments we
             <br />
             offer, with no wait time
+            <br />
+            and a patient navigator by your side
             <svg
               aria-hidden
               viewBox="0 0 200 20"
