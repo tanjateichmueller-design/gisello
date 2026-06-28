@@ -485,15 +485,18 @@ function FertilityCarePage() {
                   <th style={{ padding: 18, textAlign: "left" }}>Czech Republic</th>
                   <th style={{ padding: 18, textAlign: "left" }}>Spain</th>
                   <th style={{ padding: 18, textAlign: "left" }}>Greece</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>Georgia</th>
                   <th style={{ padding: 18, textAlign: "left" }}>Savings vs UK</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ["IVF, own eggs", "€7,500", "€2,500", "€5,500", "€3,200", "Up to €5,000"],
-                  ["IVF, donor eggs", "€11,500", "€4,500", "€7,500", "€5,200", "Up to €7,000"],
-                  ["Egg freezing", "€5,200", "€2,200", "€3,200", "€2,500", "Up to €3,000"],
-                  ["Embryo freezing & storage", "€2,200", "€600", "€900", "€700", "Up to €1,600"],
+                  ["IVF, own eggs", "€7,500", "€2,500", "€5,500", "€3,200", "€2,200", "Up to €5,300"],
+                  ["IVF, donor eggs", "€11,500", "€4,500", "€7,500", "€5,200", "€4,200", "Up to €7,300"],
+                  ["Egg freezing", "€5,200", "€2,200", "€3,200", "€2,500", "€2,000", "Up to €3,200"],
+                  ["Embryo freezing & storage", "€2,200", "€600", "€900", "€700", "€500", "Up to €1,700"],
+                  ["Genetic testing (PGT-A / PGT-M)", "€5,500", "€2,200", "€4,000", "€2,800", "€1,800", "Up to €3,700"],
+                  ["Surrogacy", "€85,000", "€45,000", "Restricted", "€55,000", "€35,000", "Up to €50,000"],
                 ].map((row, i) => (
                   <tr
                     key={row[0]}
@@ -506,8 +509,8 @@ function FertilityCarePage() {
                         key={j}
                         style={{
                           padding: 18,
-                          color: j === 5 ? "var(--color-ochre)" : "var(--color-ink)",
-                          fontWeight: j === 5 ? 500 : 400,
+                          color: j === 6 ? "var(--color-ochre)" : "var(--color-ink)",
+                          fontWeight: j === 6 ? 500 : 400,
                         }}
                       >
                         {cell}
