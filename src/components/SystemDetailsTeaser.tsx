@@ -4,6 +4,7 @@ import navigator from "@/assets/system-navigator.jpg";
 import companion from "@/assets/system-ai-companion.jpg";
 import backbone from "@/assets/system-backbone.jpg";
 import planning from "@/assets/system-planning.jpg";
+import preAfterCare from "@/assets/pre-after-care.jpg";
 
 type Card = {
   img: string;
