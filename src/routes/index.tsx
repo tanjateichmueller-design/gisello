@@ -2,29 +2,35 @@ import { createFileRoute } from "@tanstack/react-router";
 import { NavBar } from "@/components/NavBar";
 
 import { Hero } from "@/components/Hero";
-import { SystemSection } from "@/components/SystemSection";
-import { FounderQuoteBlock } from "@/components/FounderQuoteBlock";
-import { FieldNotes } from "@/components/FieldNotes";
 import { TreatmentsSection } from "@/components/TreatmentsSection";
+import { PressStrip } from "@/components/PressStrip";
 import { PatientJourneySection } from "@/components/PatientJourneySection";
+import { SavingsBanner } from "@/components/SavingsBanner";
+import { CostComparisonSection } from "@/components/CostComparisonSection";
+import { VaultTeaserSection } from "@/components/VaultTeaserSection";
+import { NavigatorsSection } from "@/components/NavigatorsSection";
+import { PartnerClinicsSection } from "@/components/PartnerClinicsSection";
+import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
+import { FieldNotes } from "@/components/FieldNotes";
+import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "GISELLO · AI navigators for cross-border medical care" },
+      { title: "GISELLO · World-class care, zero wait, a Patient Navigator by your side" },
       {
         name: "description",
         content:
-          "GISELLO coordinates fertility and aesthetic treatment across borders, combining AI for cognition with a Patient Navigator for judgement.",
+          "Gisello coordinates fertility, orthopaedic, dental and wellness treatment across Georgia, Turkey, Spain, Poland and the UAE. AI matching, human Patient Navigators, transparent prices.",
       },
-      { property: "og:title", content: "GISELLO · AI navigators for cross-border medical care" },
+      { property: "og:title", content: "GISELLO · World-class care, zero wait" },
       { property: "og:url", content: "https://www.gisello.com/" },
       {
         property: "og:description",
         content:
-          "Founder-led pilot 2026. Vault, Brief, Match. Three layers, one Patient Navigator.",
+          "Cross-border medical care with a dedicated Patient Navigator and an encrypted Patient Vault. Save up to 60% versus private care at home.",
       },
     ],
     links: [{ rel: "canonical", href: "https://www.gisello.com/" }],
@@ -37,16 +43,21 @@ function Index() {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 z-30">
           <NavBar transparent />
-          
         </div>
         <Hero />
       </div>
       <main>
         <TreatmentsSection />
+        <PressStrip />
         <PatientJourneySection />
-        <SystemSection />
-        <FounderQuoteBlock />
+        <SavingsBanner />
+        <CostComparisonSection />
+        <VaultTeaserSection />
+        <NavigatorsSection />
+        <PartnerClinicsSection />
+        <TestimonialsCarousel />
         <FieldNotes />
+        <FinalCTA />
       </main>
       <Footer />
     </div>
