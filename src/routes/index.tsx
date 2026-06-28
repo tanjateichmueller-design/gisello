@@ -4,7 +4,7 @@ import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
 import { TreatmentsSection } from "@/components/TreatmentsSection";
 import { PatientJourneySection } from "@/components/PatientJourneySection";
-import { SystemSection } from "@/components/SystemSection";
+
 import { SystemDetailsTeaser } from "@/components/SystemDetailsTeaser";
 import { VaultTeaserSection } from "@/components/VaultTeaserSection";
 import { NavigatorsSection } from "@/components/NavigatorsSection";
@@ -48,7 +48,7 @@ function Index() {
       <main>
         <TreatmentsSection />
         <PatientJourneySection />
-        <SystemSection />
+        
         <SystemDetailsTeaser />
         <VaultTeaserSection />
         <NavigatorsSection />
