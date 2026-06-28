@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PilotBanner } from "@/components/PilotBanner";
 import { NavBar } from "@/components/NavBar";
-import { SubNav } from "@/components/SubNav";
+
 import { HowItWorksPage } from "@/components/HowItWorksPage";
 import { Footer } from "@/components/Footer";
 
@@ -30,7 +30,7 @@ function HowItWorks() {
     <div id="top" className="min-h-screen bg-paper">
       <PilotBanner />
       <NavBar />
-      <SubNav title="GISELLO · How it works" />
+      
       <main>
         <HowItWorksPage />
       </main>

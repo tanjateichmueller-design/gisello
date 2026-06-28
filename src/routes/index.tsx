@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { NavBar } from "@/components/NavBar";
-import { SubNav } from "@/components/SubNav";
+
 import { Hero } from "@/components/Hero";
 import { SystemSection } from "@/components/SystemSection";
 import { FounderQuoteBlock } from "@/components/FounderQuoteBlock";
@@ -37,7 +37,7 @@ function Index() {
       <div className="relative">
         <div className="absolute inset-x-0 top-0 z-30">
           <NavBar transparent />
-          <SubNav transparent />
+          
         </div>
         <Hero />
       </div>
