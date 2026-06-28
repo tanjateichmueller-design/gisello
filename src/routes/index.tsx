@@ -3,10 +3,8 @@ import { NavBar } from "@/components/NavBar";
 
 import { Hero } from "@/components/Hero";
 import { TreatmentsSection } from "@/components/TreatmentsSection";
-import { PressStrip } from "@/components/PressStrip";
 import { PatientJourneySection } from "@/components/PatientJourneySection";
-import { SavingsBanner } from "@/components/SavingsBanner";
-import { CostComparisonSection } from "@/components/CostComparisonSection";
+import { SystemSection } from "@/components/SystemSection";
 import { VaultTeaserSection } from "@/components/VaultTeaserSection";
 import { NavigatorsSection } from "@/components/NavigatorsSection";
 import { PartnerClinicsSection } from "@/components/PartnerClinicsSection";
@@ -48,10 +46,8 @@ function Index() {
       </div>
       <main>
         <TreatmentsSection />
-        <PressStrip />
         <PatientJourneySection />
-        <SavingsBanner />
-        <CostComparisonSection />
+        <SystemSection />
         <VaultTeaserSection />
         <NavigatorsSection />
         <PartnerClinicsSection />
