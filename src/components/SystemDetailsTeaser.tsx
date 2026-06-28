@@ -24,7 +24,7 @@ const CARDS: Card[] = [
     img: navigator,
     label: "Patient Navigator",
     title: "A real human, always.",
-    body: "Your dedicated guide owns the relationship, signs off on key steps and is reachable when it counts.",
+    body: "Your dedicated Patient Navigator has a nursing background. She is your go-to person, available by call and WhatsApp.",
   },
   {
     img: companion,
