@@ -31,7 +31,7 @@ const NAV: NavItem[] = [
 
 export function NavBar({ transparent = false }: { transparent?: boolean } = {}) {
   const [open, setOpen] = useState(false);
-  const [companyOpen, setCompanyOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
 
   return (
