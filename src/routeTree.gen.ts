@@ -23,6 +23,7 @@ import { Route as ComplianceRouteImport } from './routes/compliance'
 import { Route as BookCallRouteImport } from './routes/book-call'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TreatmentsFertilityCareRouteImport } from './routes/treatments.fertility-care'
 
 const WritingRoute = WritingRouteImport.update({
   id: '/writing',
@@ -94,6 +95,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TreatmentsFertilityCareRoute = TreatmentsFertilityCareRouteImport.update({
+  id: '/treatments/fertility-care',
+  path: '/treatments/fertility-care',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -110,6 +116,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/whats-next': typeof WhatsNextRoute
   '/writing': typeof WritingRoute
+  '/treatments/fertility-care': typeof TreatmentsFertilityCareRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -126,6 +133,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/whats-next': typeof WhatsNextRoute
   '/writing': typeof WritingRoute
+  '/treatments/fertility-care': typeof TreatmentsFertilityCareRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -143,6 +151,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/whats-next': typeof WhatsNextRoute
   '/writing': typeof WritingRoute
+  '/treatments/fertility-care': typeof TreatmentsFertilityCareRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -161,6 +170,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/whats-next'
     | '/writing'
+    | '/treatments/fertility-care'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -177,6 +187,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/whats-next'
     | '/writing'
+    | '/treatments/fertility-care'
   id:
     | '__root__'
     | '/'
@@ -193,6 +204,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/whats-next'
     | '/writing'
+    | '/treatments/fertility-care'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -210,6 +222,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   WhatsNextRoute: typeof WhatsNextRoute
   WritingRoute: typeof WritingRoute
+  TreatmentsFertilityCareRoute: typeof TreatmentsFertilityCareRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -312,6 +325,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/treatments/fertility-care': {
+      id: '/treatments/fertility-care'
+      path: '/treatments/fertility-care'
+      fullPath: '/treatments/fertility-care'
+      preLoaderRoute: typeof TreatmentsFertilityCareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -330,6 +350,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   WhatsNextRoute: WhatsNextRoute,
   WritingRoute: WritingRoute,
+  TreatmentsFertilityCareRoute: TreatmentsFertilityCareRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

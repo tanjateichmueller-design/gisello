@@ -1,14 +1,23 @@
+import { Link } from "@tanstack/react-router";
 import orthopaedic from "@/assets/treatment-orthopaedic.jpg";
 import dental from "@/assets/treatment-dental.jpg";
 import fertility from "@/assets/treatment-fertility.jpg";
 import aesthetics from "@/assets/treatment-aesthetics.jpg";
 
-const TREATMENTS = [
-  { img: fertility, title: "Fertility Care", sub: "Personalised Fertility & IVF Support" },
+type Treatment = {
+  img: string;
+  title: string;
+  sub: string;
+  to?: "/treatments/fertility-care";
+};
+
+const TREATMENTS: Treatment[] = [
+  { img: fertility, title: "Fertility Care", sub: "Personalised Fertility & IVF Support", to: "/treatments/fertility-care" },
   { img: orthopaedic, title: "Orthopedics", sub: "Joint Replacement, Sports Medicine & Spine" },
   { img: dental, title: "Dental", sub: "Corrective & Cosmetic Dentistry" },
   { img: aesthetics, title: "Aesthetics", sub: "Cosmetic & Aesthetic Treatments" },
 ];
+
 
 export function TreatmentsSection() {
   return (
