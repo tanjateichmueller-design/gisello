@@ -481,17 +481,18 @@ function FertilityCarePage() {
                   }}
                 >
                   <th style={{ padding: 18, textAlign: "left" }}>Treatment</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>Home country (private)</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>Gisello partner clinic</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>You save</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>UK (home, private)</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>Czech Republic</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>Spain</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>Greece</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ["IVF, own eggs", "€8,500", "€3,800", "€4,700"],
-                  ["IVF, donor eggs", "€10,500", "€4,900", "€5,600"],
-                  ["Egg freezing", "€5,500", "€2,400", "€3,100"],
-                  ["Embryo freezing & storage", "€3,800", "€1,500", "€2,300"],
+                  ["IVF, own eggs", "€7,500", "€2,500", "€5,500", "€3,200"],
+                  ["IVF, donor eggs", "€11,500", "€4,500", "€7,500", "€5,200"],
+                  ["Egg freezing", "€5,200", "€2,200", "€3,200", "€2,500"],
+                  ["Embryo freezing & storage", "€2,200", "€600", "€900", "€700"],
                 ].map((row, i) => (
                   <tr
                     key={row[0]}
@@ -504,8 +505,8 @@ function FertilityCarePage() {
                         key={j}
                         style={{
                           padding: 18,
-                          color: j === 3 ? "var(--color-ochre)" : "var(--color-ink)",
-                          fontWeight: j === 3 ? 500 : 400,
+                          color: j === 1 ? "var(--color-ink)" : j === 0 ? "var(--color-ink)" : "var(--color-ochre)",
+                          fontWeight: j === 0 || j === 1 ? 400 : 500,
                         }}
                       >
                         {cell}
