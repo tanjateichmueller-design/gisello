@@ -44,6 +44,12 @@ const CARDS: Card[] = [
     title: "Travel without the chaos.",
     body: "We plan around your calendar, the clinic's availability and your treatment, all in one timeline.",
   },
+  {
+    img: preAfterCare,
+    label: "Pre & After Care",
+    title: "Care before and after treatment.",
+    body: "Pre and after care handled through the Gisello partner network. Screenings, follow-ups and recovery, coordinated across borders.",
+  },
 ];
 
 export function SystemDetailsTeaser() {
