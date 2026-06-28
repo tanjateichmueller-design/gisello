@@ -485,7 +485,7 @@ function FertilityCarePage() {
                   <th style={{ padding: 18, textAlign: "left" }}>Czech Republic</th>
                   <th style={{ padding: 18, textAlign: "left" }}>Spain</th>
                   <th style={{ padding: 18, textAlign: "left" }}>Greece</th>
-                  <th style={{ padding: 18, textAlign: "left" }}>Max save vs UK</th>
+                  <th style={{ padding: 18, textAlign: "left" }}>Savings vs UK</th>
                 </tr>
               </thead>
               <tbody>
