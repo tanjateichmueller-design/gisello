@@ -41,7 +41,7 @@ export function ResearchSection() {
               marginTop: 20,
               maxWidth: 720,
               marginLeft: "auto",
-              marginRight: https://www.gisello.com/",
+              marginRight: "auto",
             }}
           >
             Before Gisello existed, we interviewed 30 prospective fertility patients across the UK, Germany and the UAE. Three things came up in almost every conversation.
