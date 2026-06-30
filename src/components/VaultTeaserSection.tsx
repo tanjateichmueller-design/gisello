@@ -2,16 +2,16 @@ import { Link } from "@tanstack/react-router";
 
 const POINTS = [
   {
-    label: "Records you own",
-    body: "Imaging, labs, scans and clinical notes, structured in one encrypted vault that travels with you across borders.",
+    label: "YOUR RECORDS, IN ONE PLACE",
+    body: "Imaging, labs, scans and clinical notes, gathered into one secure record that travels with you across borders.",
   },
   {
-    label: "Compliant by design",
-    body: "Built around GDPR, UK GDPR and UAE PDPL. Granular consent for every clinic, every share, every export.",
+    label: "A FREE PATIENT BRIEF",
+    body: "We turn your scattered records into one clear medical brief, written for the clinic, at no cost to you.",
   },
   {
-    label: "Shared with your Navigator only",
-    body: "No marketing. No data resale. Your Patient Navigator and your chosen clinic, nothing else.",
+    label: "SHARED ONLY WHERE YOU SAY",
+    body: "Never sold, never marketed. Your records go only to your navigator and the clinic you choose.",
   },
 ];
 
