@@ -23,7 +23,7 @@ export const Route = createFileRoute("/writing")({
 const FEATURED = [
   { title: "Cohort 01 opens", body: "What we are measuring, what we are not promising.", date: "May 5, 2026", tone: "warm" },
   { title: "14 events. 1 patient.", body: "A walkthrough of the GISELLO system, end-to-end.", date: "Apr 28, 2026", tone: "deep" },
-  
+  { title: "Why choose Czech Republic for fertility treatments?", body: "Clinics, costs, legal framework and what patients should know.", date: "Jun 20, 2026", tone: "warm" },
 ];
 
 const POSTS = Array.from({ length: 5 }).map((_, i) => ({

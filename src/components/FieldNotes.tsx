@@ -23,6 +23,14 @@ const NOTES: Note[] = [
       "radial-gradient(120% 90% at 70% 30%, oklch(0.78 0.07 200) 0%, oklch(0.45 0.07 220) 50%, oklch(0.25 0.06 270) 100%)",
     textTone: "paper",
   },
+  {
+    title: "Why choose Czech Republic for fertility treatments?",
+    subtitle: "[ Clinics, costs, legal framework and what patients should know ]",
+    date: "Jun 20, 2026",
+    gradient:
+      "radial-gradient(120% 90% at 50% 30%, oklch(0.80 0.05 30) 0%, oklch(0.50 0.08 20) 55%, oklch(0.25 0.05 270) 100%)",
+    textTone: "paper",
+  },
 ];
 
 export function FieldNotes() {
