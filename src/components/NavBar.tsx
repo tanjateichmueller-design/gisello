@@ -308,7 +308,7 @@ export function NavBar({ transparent = false }: { transparent?: boolean } = {}) 
               fontSize: 14,
             }}
           >
-            Patient Portal
+            Patient Vault
           </a>
         </div>
 
