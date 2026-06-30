@@ -8,8 +8,8 @@ interface Note {
 
 const NOTES: Note[] = [
   {
-    title: "Cohort 01 opens",
-    subtitle: "[ What we are measuring, what we are not promising ]",
+    title: "What a cross-border fertility journey actually involves",
+    subtitle: "[ Records, clinics, travel and recovery, start to finish ]",
     date: "May 5, 2026",
     gradient:
       "radial-gradient(120% 90% at 30% 30%, oklch(0.85 0.06 80) 0%, oklch(0.55 0.10 60) 60%, oklch(0.32 0.06 270) 100%)",
