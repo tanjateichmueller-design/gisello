@@ -23,14 +23,6 @@ const NOTES: Note[] = [
       "radial-gradient(120% 90% at 70% 30%, oklch(0.78 0.07 200) 0%, oklch(0.45 0.07 220) 50%, oklch(0.25 0.06 270) 100%)",
     textTone: "paper",
   },
-  {
-    title: "Why Dubai. Why now.",
-    subtitle: "[ DHA pathway, IN5, and the regulated home for cross-border care ]",
-    date: "Apr 21, 2026",
-    gradient:
-      "radial-gradient(120% 90% at 30% 70%, oklch(0.92 0.08 80) 0%, oklch(0.78 0.13 70) 50%, oklch(0.62 0.13 55) 100%)",
-    textTone: "ink",
-  },
 ];
 
 export function FieldNotes() {
