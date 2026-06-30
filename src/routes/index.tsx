@@ -9,7 +9,7 @@ import { SystemDetailsTeaser } from "@/components/SystemDetailsTeaser";
 import { VaultTeaserSection } from "@/components/VaultTeaserSection";
 
 
-import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
+import { ResearchSection } from "@/components/ResearchSection";
 import { FieldNotes } from "@/components/FieldNotes";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
