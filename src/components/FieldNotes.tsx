@@ -16,7 +16,7 @@ const NOTES: Note[] = [
     textTone: "paper",
   },
   {
-    title: "14 events. 1 patient.",
+    title: "How Gisello works?",
     subtitle: "[ A walkthrough of the GISELLO system, end-to-end ]",
     date: "Apr 28, 2026",
     gradient:
