@@ -23,7 +23,7 @@ export const Route = createFileRoute("/writing")({
 const FEATURED = [
   { title: "Cohort 01 opens", body: "What we are measuring, what we are not promising.", date: "May 5, 2026", tone: "warm" },
   { title: "14 events. 1 patient.", body: "A walkthrough of the GISELLO system, end-to-end.", date: "Apr 28, 2026", tone: "deep" },
-  { title: "Why Dubai. Why now.", body: "DHA pathway, IN5, and the regulated home for cross-border care.", date: "Apr 21, 2026", tone: "ochre" },
+  
 ];
 
 const POSTS = Array.from({ length: 5 }).map((_, i) => ({
