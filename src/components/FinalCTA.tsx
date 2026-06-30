@@ -36,18 +36,6 @@ export function FinalCTA() {
         >
           Talk to a Patient Navigator.
         </h2>
-        <p
-          style={{
-            fontFamily: "var(--font-body)",
-            fontSize: 18,
-            lineHeight: 1.6,
-            color: "color-mix(in oklab, var(--color-gisello-blue) 75%, transparent)",
-            maxWidth: 620,
-          }}
-        >
-          A 30 minute call. No pressure, no sales pitch. We listen first, then tell you whether
-          Gisello is the right fit.
-        </p>
         <Link
           to="/book-call"
           className="inline-flex items-center gap-2 transition-colors hover:bg-ochre"
