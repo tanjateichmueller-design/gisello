@@ -47,7 +47,7 @@ const GUARANTEES = [
 const TIMELINE = [
   { q: "Q1 2026", t: "Manual Vault" },
   { q: "Q2 2026", t: "Brief generation" },
-  { q: "Q3 2026", t: "Patient portal" },
+  { q: "Q3 2026", t: "Patient vault" },
   { q: "Q4 2026", t: "Self-service" },
 ];
 

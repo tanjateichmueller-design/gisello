@@ -30,7 +30,7 @@ const PHASES: Phase[] = [
     body: "You upload existing records — labs, imaging, prior treatment notes — in any of 11 languages. AI ingests and structures them to a FHIR-aligned schema. A licensed MD signs the resulting clinical brief.",
     ai: "Multilingual ingestion · structured extraction · brief draft",
     human: "MD review and signature · errors corrected",
-    output: "Encrypted Vault + signed Brief in your patient portal",
+    output: "Encrypted Vault + signed Brief in your patient vault",
   },
   {
     num: "03",

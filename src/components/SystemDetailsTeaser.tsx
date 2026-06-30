@@ -46,9 +46,9 @@ const CARDS: Card[] = [
   },
   {
     img: backbone,
-    label: "Patient Portal",
+    label: "Patient Vault",
     title: "Your records, safely stored.",
-    body: "Your medical records are stored safely in the Patient Portal, encrypted, structured and shareable only on your terms.",
+    body: "Your medical records are stored safely in the Patient Vault, encrypted, structured and shareable only on your terms.",
   },
 ];
 

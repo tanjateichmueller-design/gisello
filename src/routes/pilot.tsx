@@ -58,7 +58,7 @@ const IT_IS_NOT = [
 const MILESTONES = [
   { q: "Q2", tag: "IN PROGRESS", tone: "live", h: "Cohort 01 opens, Fertility & Aesthetics", b: "Founder intake calls · first 3 patients matched · manual Vault" },
   { q: "Q3", tag: "NEXT", tone: "next", h: "Treatments", b: "EU centres deliver · post-op briefs return · outcomes recorded" },
-  { q: "Q4", tag: "PLANNED", tone: "planned", h: "Vault MVP live", b: "Patient portal · self-service Brief access · revoke controls" },
+  { q: "Q4", tag: "PLANNED", tone: "planned", h: "Vault MVP live", b: "Patient vault · self-service Brief access · revoke controls" },
 ];
 
 const FIT_YOU = [

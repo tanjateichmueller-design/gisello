@@ -16,13 +16,13 @@ export const Route = createFileRoute("/gisello-system")({
       {
         name: "description",
         content:
-          "How Gisello's Patient Navigators, AI companion Gina, and secure Patient Portal coordinate every step of your cross-border care.",
+          "How Gisello's Patient Navigators, AI companion Gina, and secure Patient Vault coordinate every step of your cross-border care.",
       },
       { property: "og:title", content: "The Gisello System" },
       {
         property: "og:description",
         content:
-          "End-to-end patient support powered by human Patient Navigators, an AI companion, and a secure Patient Portal.",
+          "End-to-end patient support powered by human Patient Navigators, an AI companion, and a secure Patient Vault.",
       },
     ],
     links: [{ rel: "canonical", href: "https://www.gisello.com/gisello-system" }],

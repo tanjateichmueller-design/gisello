@@ -43,7 +43,7 @@ const TIERS = [
     sub: "Per case, post-pilot, Q1 2027",
     items: [
       "Everything in Cohort 01",
-      "Self-service patient portal",
+      "Self-service patient vault",
       "Multi-clinic comparison view",
       "Insurance pre-auth support",
       "GP handoff package",
