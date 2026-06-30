@@ -52,7 +52,7 @@ function Index() {
         <SystemDetailsTeaser />
         <VaultTeaserSection />
         
-        <TestimonialsCarousel />
+        <ResearchSection />
         <FieldNotes />
         <FinalCTA />
       </main>
